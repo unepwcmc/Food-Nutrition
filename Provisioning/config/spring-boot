@@ -1,0 +1,35 @@
+#! /bin/sh
+# chkconfig: 2345 20 80
+# description: SysVInit script for Food Nutrition
+
+export JAVA_HOME=/usr/java/default
+export MODE=service
+export JAVA_OPTS=-Dspring.profiles.active=dev
+export SPRING_BOOT_PROJECT='/opt/Food-Nutrition/Backend/build/libs/food-nutrition.war'
+export SERVICE_NAME='food-nutrition'
+
+startcmd="$SPRING_BOOT_PROJECT start > /dev/null &"
+restartcmd="$SPRING_BOOT_PROJECT restart > /dev/null &"
+stopcmd="$SPRING_BOOT_PROJECT stop > /dev/null &"
+statuscmd="$SPRING_BOOT_PROJECT status > /dev/null &"
+
+case "$1" in
+start)
+   echo "Starting $SERVICE_NAME ..."
+   su -c "${startcmd}" $USER
+;;
+restart)
+   echo "Re-starting $SERVICE_NAME ..."
+   su -c "${restartcmd}" $USER
+;;
+stop)
+   echo "Stopping $SERVICE_NAME ..."
+   su -c "${stopcmd}" $USER
+;;
+status)
+   su -c "${stopcmd}" $USER
+;;
+*)
+   echo "Usage: $0 {start|stop|restart|status}"
+exit 1
+esac
