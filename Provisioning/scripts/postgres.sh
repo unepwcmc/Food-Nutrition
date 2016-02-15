@@ -6,7 +6,7 @@ sudo apt-get install -y postgresql postgresql-contrib
 chkconfig postgresql on
 
 #Config the Server
-su - postgres -c "createdb biodiversity"
+su - postgres -c "createdb foodnutrition"
 su - postgres -c "psql -U postgres -d postgres -c \"alter user postgres with password ')fmK?jPeWhq6KMwm';\""
 
 sudo cp /vagrant/config/postgres/postgresql.conf /etc/postgresql/9.3/main/postgresql.conf

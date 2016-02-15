@@ -28,4 +28,4 @@ sudo /vagrant/scripts/frontend.sh
 sudo /vagrant/scripts/backend.sh
 
 # Victory!
-echo "You're all done! Your Biodiversity Collections server is now running."
+echo "You're all done! Your Food & Nutrition server is now running."
