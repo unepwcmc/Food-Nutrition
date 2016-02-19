@@ -1,23 +1,24 @@
 <sBRAZILIANass="l-main">
 
     <section class="page-content">
+
         <div class="container">
             <div class="row">
-                <div class="col-md-1"> </div>
-                <div class="col-md-12"><h2 class="text-center">{{ 'BRAZILIAN_COLLECTIONS_DATABASE' | translate }}
-                    <strong>&nbsp;</strong></h2></div>
-                <div class="col-md-1"></div>
+                <div class="col-md-12" style="height: 100px;">&nbsp;</div>
+                <div class="col-md-12"><strong><h2 class="text-center">{{ 'WELCOME_MESSAGE' | translate }}</strong></h2></div>
+                <div class="col-md-12"><h3 class="text-center">{{ 'TRY_SEARCH' | translate }}</h3></div>
+                <div class="col-md-12" style="height: 80px;">&nbsp;</div>
             </div>
         </div>
+
         <div class="container">
             <div class="row">
-                <div class="col-md-3">&nbsp;</div>
-                <div class="col-md-6">
+                <div class="col-md-12">
 
                     <div align="center">
                         <form class="form-inline" ng-submit="search()">
                             <div class="form-group">
-                                <div align="left" class="form-group">
+                                <div align="left" class="form-group" style="width: 450px;">
                                     <angucomplete-alt id="searchTop"
                                                       placeholder="{{ 'SEARCH' | translate }}"
                                                       pause="150"
@@ -29,30 +30,33 @@
                                                       input-changed="inputChangedFn"
                                                       input-class="form-control"/>
                                 </div>
-                                <div class="form-group" style="width: 120px;">
+                                <div class="form-group" style="width: 250px;">
                                     <select select-wrap ng-model="searchType">
-                                        <option value="collection" selected>{{ 'COLLECTION' | translate }}</option>
-                                        <option value="institution">{{ 'INSTITUTION' | translate }}</option>
-                                        <option value="network">{{ 'NETWORK' | translate }}</option>
-                                        <option value="curator">{{ 'CURATOR' | translate }}</option>
-                                        <option value="document">{{ 'DOCUMENT' | translate }}</option>
+                                        <option value="collection" selected>{{ 'FOOD_COMPOSITION' | translate }}</option>
+                                        <option value="institution">{{ 'RECIPES' | translate }}</option>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary" style="cursor: pointer"><i class="fa fa-search"></i></button>
-                                    <!--<button type="submit" class="btn btn-primary"  style="cursor: pointer" ng-disabled="isSearchEnabled()"><i class="fa fa-search"></i></button>-->
+                                    <button type="submit" class="btn btn-primary" style="cursor: pointer"><i class="fa fa-search"></i><strong>{{ 'SEARCH' | translate }}</strong></button>
                                 </div>
                             </div>
                         </form>
                     </div>
 
                 </div>
-                <div class="col-md-4">&nbsp;</div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" style="height: 100px;">&nbsp;</div>
+                <div class="col-md-12"><h5 class="text-center"><i>{{ 'NEW_RECIPE_IDEA' | translate }}</i>&nbsp;
+                    <a href="#">{{'CLICK_HERE_TO_ADD' | translate}}</a></h5></div>
+                <div class="col-md-12" style="height: 100px;">&nbsp;</div>
+            </div>
+        </div>
+
         <hr class="horizontal-line"/>
     </section>
-
-    <home-map></home-map>
 
 </section>
