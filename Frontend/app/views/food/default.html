@@ -1,0 +1,56 @@
+<!-- MAIN -->
+<section class="l-main general">
+
+    <!-- Loading screen -->
+    <!--<div id="loader-wrapper" class="loading">-->
+        <!--<div id="loader"></div>-->
+    <!--</div>-->
+
+    <!-- PAGE-HEADER -->
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3><strong>Red Guava</strong></h3>
+                </div>
+                <div class="col-md-9">
+                    <h3>Red Guava, Peel, dry, frozen, raw, organic, rhoncus erat quis, lacus tempor, suscipt.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="row">
+
+                <div ui-tab id="tabs">
+
+                    <ul class="list-inline nav nav-tabs center-margin" role="tablist">
+                        <li class="active"><a href="#general-information">{{'GENERAL_INFORMATION' |  translate }}</a></li>
+                        <li><a href="#food-name-description">{{'FOOD_NAME_DESCRIPTION' |  translate }}</a></li>
+                        <li><a href="#sampling">{{'SAMPLING' |  translate }}</a></li>
+                        <li><a href="#reference">{{'REFERENCE' |  translate }}</a></li>
+                        <li><a href="#general-analysis">{{'GENERAL_ANALYSIS' |  translate }}</a></li>
+                        <li><a href="#energy-macronutrients">{{'ENERGY_MACRONUTRIENTS' |  translate }}</a></li>
+                        <li><a href="#micronutrients">{{'MICRONUTRIENTS' |  translate }}</a></li>
+                        <li><a href="#other-components">{{'OTHER_COMPONENTS' |  translate }}</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div class="tab-pane active center-margin" id="general-information" general-information edit-form></div>
+                        <div class="tab-pane center-margin" id="food-name-description" food-name-description edit-form></div>
+                        <div class="tab-pane center-margin" id="sampling" sampling edit-form></div>
+                        <div class="tab-pane center-margin" id="reference" reference edit-form></div>
+                        <div class="tab-pane center-margin" id="general-analysis" general-analysis edit-form></div>
+                        <div class="tab-pane center-margin" id="energy-macronutrients" energy-macronutrients edit-form></div>
+                        <div class="tab-pane center-margin" id="micronutrients" micronutrients edit-form></div>
+                        <div class="tab-pane center-margin" id="other-components" other-components edit-form></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</section>

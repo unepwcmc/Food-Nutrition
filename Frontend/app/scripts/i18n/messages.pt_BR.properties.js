@@ -12,7 +12,20 @@ define([],function ( ) {
     'FOOD_COMPOSITION':'Composição de Alimentação',
     'RECIPES':'Receitas',
     'NEW_RECIPE_IDEA':'Você tem uma nova ideia de receita?',
-    'CLICK_HERE_TO_ADD':'Clique aqui para adicionar uma!'
+    'CLICK_HERE_TO_ADD':'Clique aqui para adicionar uma!',
+    'GENERAL_INFORMATION':'Informações gerais',
+    'FOOD_NAME_DESCRIPTION':'Nome & descrição da alimentação',
+    'SAMPLING':'Amostragem',
+    'REFERENCE':'Referência',
+    'GENERAL_ANALYSIS':'Análise geral',
+    'ENERGY_MACRONUTRIENTS':'Energia & macro-nutrientes',
+    'MICRONUTRIENTS':'Micro-nutrientes',
+    'OTHER_COMPONENTS':'Outros componentes',
+    'FOOD_GROUP':'Group alimentar',
+    'FOOD_TYPE':'Tipo alimentar',
+    'TAXON_RANK':'Rank taxonômico',
+    'SCIENTIFIC_NAME': 'Nome científico',
+    'NOTES':'Notas'
   }
 
 });

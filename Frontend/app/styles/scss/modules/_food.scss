@@ -1,0 +1,12 @@
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus{
+  color: #666;
+  font-weight:bolder;
+  background-color: #CCCCCC;
+}
+
+.nav-tabs > li > a {
+  padding: 10px 5px !important;
+}
+

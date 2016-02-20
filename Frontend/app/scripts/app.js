@@ -29,6 +29,13 @@ define(['include', 'language'], function (angularAMD, language) {
                         templateUrl: 'views/home/default.html',
                         controllerUrl: 'home/controllers/homeController'
 
+                    }))
+                .state('food', angularAMD.route(
+                    {
+                        url: '/food',
+                        templateUrl: 'views/food/default.html',
+                        controllerUrl: 'food/controllers/foodController'
+
                     }));
 
             $provide.factory('authInterceptor', ['$rootScope', '$q', '$window', '$cookies',
@@ -125,10 +132,10 @@ define(['include', 'language'], function (angularAMD, language) {
 
     app.CONST = {
         LOCALHOST: "http://localhost:8080/", //LOCAL
-        //LOCALHOST:"http://ec2-54-94-203-12.sa-east-1.compute.amazonaws.com:8080/", // DEV
-        //LOCALHOST:"http://ec2-54-94-149-79.sa-east-1.compute.amazonaws.com:8080/", // QA
-        //SERVER:"http://ec2-54-94-149-79.sa-east-1.compute.amazonaws.com:8080/", // QA
-        SERVER: "http://ec2-54-94-203-12.sa-east-1.compute.amazonaws.com:8080/"  // DEV
+        //LOCALHOST:"http://ec2-54-207-106-173.sa-east-1.compute.amazonaws.com:8080/", // DEV
+        //LOCALHOST:"http://ec2-54-207-81-210.sa-east-1.compute.amazonaws.com:8080/", // QA
+        //SERVER:"http://ec2-54-207-81-210.sa-east-1.compute.amazonaws.com:8080/", // QA
+        SERVER: "http://ec2-54-207-106-173.sa-east-1.compute.amazonaws.com:8080/"  // DEV
     };
 
     app.run(['$rootScope', '$timeout', '$http', '$window', '$cookies',
