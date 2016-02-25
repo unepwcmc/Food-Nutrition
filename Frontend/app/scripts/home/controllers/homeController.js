@@ -2,8 +2,7 @@ define(['app'], function () {
 
     'use strict';
 
-    return ['$scope','$rootScope','BaseController', '$state','$window','$timeout',
-        function ($scope, $rootScope, BaseController, $state, $window, $timeout) {
+    return ['$scope','$rootScope','BaseController', function ($scope, $rootScope, BaseController) {
 
             angular.extend($scope, BaseController);
 

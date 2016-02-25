@@ -30,11 +30,11 @@ define(['include', 'language'], function (angularAMD, language) {
                         controllerUrl: 'home/controllers/homeController'
 
                     }))
-                .state('food', angularAMD.route(
+                .state('administration', angularAMD.route(
                     {
-                        url: '/food',
-                        templateUrl: 'views/food/default.html',
-                        controllerUrl: 'food/controllers/foodController'
+                        url: '/administration',
+                        templateUrl: 'views/administration/default.html',
+                        controllerUrl: 'administration/controllers/administrationController'
 
                     }));
 

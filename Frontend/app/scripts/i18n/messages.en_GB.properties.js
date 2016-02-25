@@ -7,7 +7,7 @@ define([],function ( ) {
     'ENGLISH':'English',
     'PORTUGUESE':'Portuguese',
     'SEARCH':'Search',
-    'WELCOME_MESSAGE':'Welcome to the Food and Nutrition Portal',
+    'WELCOME_MESSAGE':'Welcome to the Biodiversity Food and Nutrition',
     'TRY_SEARCH':'Try a search!',
     'FOOD_COMPOSITION':'Food Composition',
     'RECIPES':'Recipes',

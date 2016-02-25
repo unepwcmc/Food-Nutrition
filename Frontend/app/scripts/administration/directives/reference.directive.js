@@ -2,13 +2,13 @@ define(['angularAMD'], function (angularAMD) {
 
     'use strict';
 
-    angularAMD.directive('otherComponents', ['$timeout', '$rootScope', 'toastr',
+    angularAMD.directive('reference', ['$timeout', '$rootScope', 'toastr',
         function ( $timeout, $rootScope, toastr ) {
 
             return {
 
                 restrict: 'EA',
-                templateUrl: 'views/food/other.components.tab.tpl.html',
+                templateUrl: 'views/administration/reference.tab.tpl.html',
 
                 controller: ['$scope', '$http', '$rootScope', '$state', '$q',
                     function( $scope, $http, $rootScope, $state, $q ) {
