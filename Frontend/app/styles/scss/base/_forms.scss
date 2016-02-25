@@ -78,6 +78,43 @@ select.form-control{
 	}
 }
 
+.select-wrapper-white{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  box-shadow: none;
+
+
+  &:after{
+	font-family: 'FontAwesome';
+	width: 40px;
+	height: 40px;
+	background-color: $white;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	color: $gray-fonts;
+	text-align: center;
+	line-height: 40px;
+	pointer-events:none;
+	border-right: 1px solid #EAEAEA;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+  }
+
+  select#language{
+	border: 1px solid #EAEAEA;
+	font-family: $font-1;
+	color:$gray-fonts;
+	font-weight: bolder;
+
+	& option{
+	  color:$gray-fonts;
+	  font-weight: bold;
+	}
+  }
+}
+
 textarea.form-control{
 	@extend input[type="text"];
 	min-height: 100px;
