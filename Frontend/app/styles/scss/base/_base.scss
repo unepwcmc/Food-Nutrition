@@ -59,48 +59,31 @@ h5{
 a{
 	
 	&:hover{
-		color: #003DCC;
+		color: $green;
 		text-decoration: none;
 		outline: none !important;
 	}
 
+	&:active{
+	  color: $green;
+	  text-decoration: none;
+	  outline: none !important;
+	}
 
 	&:hover{
-	  color: #003DCC;
+	  color: $green;
 		text-decoration: underline;
 	}
 
 	&:focus,&:visited{
-		color: #003DCC;
+		color: $green;
 	}
 
 	&[target="blank"]{
-	  color: #003DCC;
+	  color: $green;
 	}
 }
 
-/** SEPARATOR STYLES */
-hr{
-	
-}
-
-/** PARA STYLES */
-p{
-	
-}
-
-.navbar {
-  h2.navbar-text{
-	  color:#fff;
-	}
-}
-
-.collection-image > li{
-  margin-top: 8px;
-  margin-left:08px;
-  padding-right: 0;
-  padding-left: 0;
-}
 
 
 
