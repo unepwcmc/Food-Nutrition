@@ -156,6 +156,9 @@ a:focus, a:visited {
 a[target="blank"] {
   color: #008937; }
 
+.fa {
+  color: #008937; }
+
 /** FORM STYLES */
 input[type="text"], textarea.form-control,
 input[type="password"],
@@ -651,14 +654,6 @@ body.noscroll {
   content: "> ";
   padding: 0 5px; }
 
-i.bt-img-close {
-  color: #000 !important;
-  border: solid 1px #EAEAEA;
-  width: 100%;
-  padding-top: 4px;
-  padding-left: 40%;
-  height: 25px; }
-
 .angucomplete-description {
   font-size: 12px; }
 
@@ -670,6 +665,7 @@ i.bt-img-close {
 /** HEADER */
 .l-header {
   height: 50px;
+  margin-top: 10px;
   /**
 	 * ----------------------------------------------------------------------------------------
 	 * Branding
@@ -685,6 +681,8 @@ i.bt-img-close {
 	 * User meta
 	 * ----------------------------------------------------------------------------------------
 	 */ }
+  .l-header > div > hr {
+    margin-top: 5px !important; }
   .l-header .branding {
     font-size: 16px;
     font-weight: 700;

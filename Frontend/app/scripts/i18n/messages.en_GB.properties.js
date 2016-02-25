@@ -25,7 +25,8 @@ define([],function ( ) {
     'FOOD_TYPE':'Food type',
     'TAXON_RANK':'Taxon rank',
     'SCIENTIFIC_NAME': 'Scientific name',
-    'NOTES':'Notes'
+    'NOTES':'Notes',
+    'ABOUT': 'About'
   }
 
 });

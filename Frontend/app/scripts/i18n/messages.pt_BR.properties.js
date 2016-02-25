@@ -25,7 +25,8 @@ define([],function ( ) {
     'FOOD_TYPE':'Tipo alimentar',
     'TAXON_RANK':'Rank taxonômico',
     'SCIENTIFIC_NAME': 'Nome científico',
-    'NOTES':'Notas'
+    'NOTES':'Notas',
+    'ABOUT': 'Sobre'
   }
 
 });

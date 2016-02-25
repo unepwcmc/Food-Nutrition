@@ -17,7 +17,10 @@ define(
         'core/directives/core.on.finish.render.directive',
         'core/filters/core.pagination.filter',
         'core/filters/core.trim.filter',
-        'core/controllers/BaseController'
+        'core/controllers/BaseController',
+        'auth/directives/auth.login.form.directive',
+        'auth/directives/auth.login.show.directive',
+        'auth/directives/auth.username.box.directive'
     ],
     function (angularAMD) {
         'use strict';
