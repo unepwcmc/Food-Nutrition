@@ -1,9 +1,22 @@
+.nav-tabs > li {
+  float: left;
+  margin-bottom: 0;
+}
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus{
   color: #666;
   font-weight:bolder;
-  background-color: #CCCCCC;
+  background-color: $white;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus{
+  color: #666!important;
+  background-color: $white;
+  border: 0;
 }
 
 .nav-tabs > li > a {
