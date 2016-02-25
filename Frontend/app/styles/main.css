@@ -948,24 +948,23 @@ input#search-home_value {
   background-color: #E7F0EB;
   border-color: #E7F0EB; }
 
-.nav-tabs > li {
-  float: left;
-  margin-bottom: 0; }
-
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  color: #666;
-  font-weight: bolder;
-  background-color: #ffffff;
-  margin-bottom: -1px; }
-
-.nav-tabs > li > a,
-.nav-tabs > li > a:hover,
-.nav-tabs > li > a:focus {
-  color: #666 !important;
-  background-color: #ffffff;
-  border: 0; }
-
-.nav-tabs > li > a {
-  padding: 10px 5px !important; }
+.nav-tabs {
+  margin-left: 18px; }
+  .nav-tabs li {
+    float: left;
+    margin-bottom: 0; }
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    color: #666;
+    font-weight: bolder;
+    background-color: #ffffff;
+    margin-bottom: -1px; }
+  .nav-tabs > li > a,
+  .nav-tabs > li > a:hover,
+  .nav-tabs > li > a:focus {
+    color: #666 !important;
+    background-color: #ffffff;
+    border: 0; }
+  .nav-tabs > li > a {
+    padding: 10px 5px !important; }
