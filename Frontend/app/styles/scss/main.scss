@@ -10,7 +10,8 @@ $font-2 : 'Libre Baskerville', serif;
 
 /** Colors */
 
-$green : #666666; // green
+$green : #008937; // green
+$green-light : #E7F0EB; // green
 $white : #ffffff;
 $gray-fonts : #666666; // header Gray
 $body-fonts : #735d5e; // body Gray
@@ -42,7 +43,4 @@ $font-color 	: $body-fonts;
 @import "layout/footer";
 @import "modules/buttons";
 @import "modules/home";
-@import "modules/collection";
-@import "modules/curator";
-@import "modules/food";
-@import "modules/login";
+@import "modules/administration";
