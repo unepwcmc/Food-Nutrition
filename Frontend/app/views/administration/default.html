@@ -9,12 +9,45 @@
     <!-- PAGE-HEADER -->
     <div class="page-header">
         <div class="container">
-            <div class="row">
+
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Administration</a></li>
+                <li class="active">New Record_Green Guava, pray, dry, organic: General Information</li>
+            </ol>
+
+            <hr/>
+
+            <div class="row associate_form">
+                <form class="form-inline">
+                    <div class="small-field">
+                        <div class="form-group">
+                            <label class="sr-only" for="short_name">Email address</label>
+                            <input type="text" class="form-control" id="short_name" placeholder="Type a short name">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-sm"><i style="color: #fff" class="fa fa-chain"></i>Associate</button>
+                    </div>
+                    <div class="line-separator">
+                        <div class="side-line"> </div>
+                        <div class="triangle"> </div>
+                        <div class="side-line"> </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="row administrator-header">
                 <div class="col-md-8">
                     <h3><strong>Red Guava</strong></h3>
                 </div>
-                <div class="col-md-9">
-                    <h3>Red Guava, Peel, dry, frozen, raw, organic, rhoncus erat quis, lacus tempor, suscipt.</h3>
+                <div class="col-md-12">
+                    <h3>Green-Apple Guava, peel, dry, raw, organic, rhoncus erat quis
+
+
+                        <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT' | translate}}</strong></a>
+                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-white save-form"><strong>{{'SAVE_CHANGES' | translate}}</strong></a>
+                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-transparent save-form cancel"><strong>{{'CANCEL' | translate}}</strong></a>
+
+                    </h3>
                 </div>
             </div>
         </div>

@@ -486,3 +486,17 @@ form.form-block.view-mode textarea[readonly="readonly"]{
   resize: none;
   overflow: hidden !important;
 }
+
+.btn{
+  background-color: $green!important;
+  color: $white!important;
+}
+
+.btn-sm {
+  margin-top: 4px!important;
+  height:32px!important;
+  padding: 5px 20px 5px 10px!important;
+  font-size: 12px!important;
+  line-height: 1.2!important;
+  border-radius: 3px!important;
+}

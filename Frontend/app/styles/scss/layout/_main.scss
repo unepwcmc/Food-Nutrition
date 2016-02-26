@@ -44,6 +44,14 @@ body.noscroll{
   border-radius: 0;
 }
 
+.breadcrumb {
+  padding: 8px 15px;
+  margin-left: 15px;
+  margin-bottom: 0!important;
+  list-style: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
 
 .breadcrumb a{
   color:#666;
@@ -65,4 +73,26 @@ body.noscroll{
 	background-image: url("../images/marker_icon.png");
 	text-align: center;
 	color: white;
+}
+
+.line-separator {
+}
+
+.side-line {
+  display: inline-block;
+  border-top: 1px solid $green-light;
+  width: 15%;
+}
+
+.triangle {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  transform: rotate(45deg);
+  transform-origin: center center;
+  border-top: 1px solid $green-light;
+  border-left: 1px solid $green-light;
+  margin-left: -3px;
+  margin-right: -3px;
+  margin-bottom: -3px;
 }
