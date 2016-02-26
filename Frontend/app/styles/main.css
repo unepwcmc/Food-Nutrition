@@ -740,6 +740,13 @@ body.noscroll {
   margin-right: -3px;
   margin-bottom: -3px; }
 
+figure {
+  margin: 0 !important; }
+
+.img-thumbnail {
+  border: 0 !important;
+  border-radius: 0 !important; }
+
 /** HEADER */
 .l-header {
   height: 50px;

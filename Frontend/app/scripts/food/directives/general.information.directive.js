@@ -1,4 +1,4 @@
-define(['angularAMD'], function (angularAMD) {
+define(['angularAMD','core/directives/core.images.box.directive'], function (angularAMD) {
 
     'use strict';
 
