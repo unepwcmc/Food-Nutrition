@@ -26,7 +26,10 @@ define([],function ( ) {
     'TAXON_RANK':'Rank taxonômico',
     'SCIENTIFIC_NAME': 'Nome científico',
     'NOTES':'Notas',
-    'ABOUT': 'Sobre'
+    'ABOUT': 'Sobre',
+    'EDIT':'Editar',
+    'CANCEL':'Cancelar',
+    'SAVE':'Salvar'
   }
 
 });

@@ -547,7 +547,8 @@ form.form-block.view-mode textarea[readonly="readonly"] {
 
 .btn {
   background-color: #008937 !important;
-  color: #ffffff !important; }
+  color: #ffffff !important;
+  font-style: italic; }
 
 .btn-sm {
   margin-top: 4px !important;
@@ -705,7 +706,7 @@ body.noscroll {
   border-radius: 4px; }
 
 .breadcrumb a {
-  color: #666;
+  color: #008937;
   font-weight: bold;
   text-decoration: none; }
 
@@ -1034,7 +1035,7 @@ input#search-home_value {
   .nav-tabs > li.active > a,
   .nav-tabs > li.active > a:hover,
   .nav-tabs > li.active > a:focus {
-    color: #666;
+    color: #008937;
     font-weight: bolder;
     background-color: #ffffff;
     margin-bottom: -1px;
@@ -1042,7 +1043,7 @@ input#search-home_value {
   .nav-tabs > li > a,
   .nav-tabs > li > a:hover,
   .nav-tabs > li > a:focus {
-    color: #666 !important;
+    color: #008937 !important;
     background-color: #ffffff;
     border: 0; }
   .nav-tabs > li > a {

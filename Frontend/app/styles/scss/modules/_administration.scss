@@ -9,7 +9,7 @@
   & > li.active > a,
   & > li.active > a:hover,
   & > li.active > a:focus {
-    color: #666;
+    color: $green;
     font-weight: bolder;
     background-color: $white;
     margin-bottom: -1px;
@@ -19,7 +19,7 @@
   & > li > a,
   & > li > a:hover,
   & > li > a:focus {
-    color: #666 !important;
+    color: $green !important;
     background-color: $white;
     border: 0;
   }

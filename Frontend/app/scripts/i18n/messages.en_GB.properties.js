@@ -26,7 +26,10 @@ define([],function ( ) {
     'TAXON_RANK':'Taxon rank',
     'SCIENTIFIC_NAME': 'Scientific name',
     'NOTES':'Notes',
-    'ABOUT': 'About'
+    'ABOUT': 'About',
+    'EDIT':'Edit',
+    'CANCEL':'Cancel',
+    'SAVE':'Save'
   }
 
 });
