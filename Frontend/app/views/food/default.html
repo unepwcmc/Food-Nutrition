@@ -3,7 +3,7 @@
 
     <!-- Loading screen -->
     <!--<div id="loader-wrapper" class="loading">-->
-        <!--<div id="loader"></div>-->
+    <!--<div id="loader"></div>-->
     <!--</div>-->
 
     <!-- PAGE-HEADER -->
@@ -25,27 +25,52 @@
                             <label class="sr-only" for="short_name">Email address</label>
                             <input type="text" class="form-control" id="short_name" placeholder="Type a short name">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-sm"><i style="color: #fff" class="fa fa-chain"></i>Associate</button>
+                        <button type="submit" class="btn btn-primary btn-sm"><i style="color: #fff"
+                                                                                class="fa fa-chain"></i>Associate
+                        </button>
                     </div>
                     <div class="line-separator">
-                        <div class="side-line"> </div>
-                        <div class="triangle"> </div>
-                        <div class="side-line"> </div>
+                        <div class="side-line"></div>
+                        <div class="triangle"></div>
+                        <div class="side-line"></div>
                     </div>
                 </form>
             </div>
 
             <div class="row administrator-header">
-                <div class="col-md-8">
-                    <h3><strong>Red Guava</strong></h3>
+                <div class="col-md-10">
+                    <h3 class="food-header">
+                        <strong class="pull-left">Red Guava</strong>
+                        <ul class="list-inline pull-left">
+                            <li><a >Basic report</a></li>
+                            <li><a >Statics report</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">Records <span
+                                        class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </h3>
                 </div>
                 <div class="col-md-12">
                     <h3>Green-Apple Guava, peel, dry, raw, organic, rhoncus erat quis
 
 
-                        <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT' | translate}}</strong></a>
-                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-white save-form"><strong>{{'SAVE_CHANGES' | translate}}</strong></a>
-                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-transparent save-form cancel"><strong>{{'CANCEL' | translate}}</strong></a>
+                        <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT'
+                            | translate}}</strong></a>
+                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-white save-form"><strong>{{'SAVE_CHANGES'
+                            | translate}}</strong></a>
+                        <a ng-show="editMode"
+                           class="btn btn-small btn-primary pull-right btn-transparent save-form cancel"><strong>{{'CANCEL'
+                            | translate}}</strong></a>
 
                     </h3>
                 </div>
@@ -60,23 +85,27 @@
                 <div ui-tab id="tabs">
 
                     <ul class="list-inline nav nav-tabs center-margin" role="tablist">
-                        <li class="active"><a href="#general-information">{{'GENERAL_INFORMATION' |  translate }}</a></li>
-                        <li><a href="#food-name-description">{{'FOOD_NAME_DESCRIPTION' |  translate }}</a></li>
-                        <li><a href="#sampling">{{'SAMPLING' |  translate }}</a></li>
-                        <li><a href="#reference">{{'REFERENCE' |  translate }}</a></li>
-                        <li><a href="#general-analysis">{{'GENERAL_ANALYSIS' |  translate }}</a></li>
-                        <li><a href="#energy-macronutrients">{{'ENERGY_MACRONUTRIENTS' |  translate }}</a></li>
-                        <li><a href="#micronutrients">{{'MICRONUTRIENTS' |  translate }}</a></li>
-                        <li><a href="#other-components">{{'OTHER_COMPONENTS' |  translate }}</a></li>
+                        <li class="active"><a href="#general-information">{{'GENERAL_INFORMATION' | translate }}</a>
+                        </li>
+                        <li><a href="#food-name-description">{{'FOOD_NAME_DESCRIPTION' | translate }}</a></li>
+                        <li><a href="#sampling">{{'SAMPLING' | translate }}</a></li>
+                        <li><a href="#reference">{{'REFERENCE' | translate }}</a></li>
+                        <li><a href="#general-analysis">{{'GENERAL_ANALYSIS' | translate }}</a></li>
+                        <li><a href="#energy-macronutrients">{{'ENERGY_MACRONUTRIENTS' | translate }}</a></li>
+                        <li><a href="#micronutrients">{{'MICRONUTRIENTS' | translate }}</a></li>
+                        <li><a href="#other-components">{{'OTHER_COMPONENTS' | translate }}</a></li>
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane active center-margin" id="general-information" general-information edit-form></div>
-                        <div class="tab-pane center-margin" id="food-name-description" food-name-description edit-form></div>
+                        <div class="tab-pane active center-margin" id="general-information" general-information
+                             edit-form></div>
+                        <div class="tab-pane center-margin" id="food-name-description" food-name-description
+                             edit-form></div>
                         <div class="tab-pane center-margin" id="sampling" sampling edit-form></div>
                         <div class="tab-pane center-margin" id="reference" reference edit-form></div>
                         <div class="tab-pane center-margin" id="general-analysis" general-analysis edit-form></div>
-                        <div class="tab-pane center-margin" id="energy-macronutrients" energy-macronutrients edit-form></div>
+                        <div class="tab-pane center-margin" id="energy-macronutrients" energy-macronutrients
+                             edit-form></div>
                         <div class="tab-pane center-margin" id="micronutrients" micronutrients edit-form></div>
                         <div class="tab-pane center-margin" id="other-components" other-components edit-form></div>
                     </div>

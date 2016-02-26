@@ -1088,3 +1088,16 @@ section.general > div > div > div.row.administrator-header div.col-md-12 > h3 {
 
 .widget-body {
   padding-left: 25px; }
+
+h3.food-header {
+  margin-left: 26px; }
+  h3.food-header > ul {
+    margin-left: 20px;
+    border-left: solid 1px #eaeaea; }
+  h3.food-header ul > li:first-child {
+    margin-left: 10px; }
+  h3.food-header > ul > li > a {
+    color: #008937;
+    font-size: 14px;
+    font-weight: bolder;
+    cursor: pointer; }

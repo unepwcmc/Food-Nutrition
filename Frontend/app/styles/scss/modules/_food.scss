@@ -77,3 +77,24 @@ section.general {
   padding-left:25px;
 }
 
+h3.food-header{
+  margin-left:26px;
+
+  & > ul{
+    margin-left:20px;
+    border-left: solid 1px #eaeaea;
+  }
+
+  & ul > li:first-child{
+    margin-left:10px;
+  }
+
+  & > ul > li > a{
+    color:$green;
+    font-size:14px;
+    font-weight:bolder;
+    cursor: pointer;
+  }
+}
+
+
