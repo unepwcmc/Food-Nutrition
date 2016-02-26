@@ -8,7 +8,7 @@ define(['angularAMD'], function (angularAMD) {
             return {
 
                 restrict: 'EA',
-                templateUrl: 'views/administration/sampling.tab.tpl.html',
+                templateUrl: 'views/food/sampling.tab.tpl.html',
 
                 controller: ['$scope', '$http', '$rootScope', '$state', '$q',
                     function( $scope, $http, $rootScope, $state, $q ) {

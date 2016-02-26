@@ -1,12 +1,12 @@
 define(['app',
-    'administration/directives/general.information.directive',
-    'administration/directives/food.name.description.directive',
-    'administration/directives/sampling.directive',
-    'administration/directives/reference.directive',
-    'administration/directives/general.analysis.directive',
-    'administration/directives/energy.macronutrients.directive',
-    'administration/directives/micronutrients.directive',
-    'administration/directives/other.components.directive'], function () {
+    'food/directives/general.information.directive',
+    'food/directives/food.name.description.directive',
+    'food/directives/sampling.directive',
+    'food/directives/reference.directive',
+    'food/directives/general.analysis.directive',
+    'food/directives/energy.macronutrients.directive',
+    'food/directives/micronutrients.directive',
+    'food/directives/other.components.directive'], function () {
 
     'use strict';
 

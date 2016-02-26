@@ -700,7 +700,7 @@ body.noscroll {
 .breadcrumb {
   padding: 8px 15px;
   margin-left: 15px;
-  margin-bottom: 0 !important;
+  margin-bottom: 5px !important;
   list-style: none;
   background-color: transparent;
   border-radius: 4px; }
@@ -833,6 +833,9 @@ body.noscroll {
       text-decoration: none; }
 
 .username-login-box {
+  color: #008937; }
+
+ul.list-inline.user-meta > li > a {
   color: #008937; }
 
 /** FOOTER */
