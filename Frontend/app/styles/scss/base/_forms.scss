@@ -504,6 +504,8 @@ form.form-block.view-mode textarea[readonly="readonly"]{
 
 div.form-group-row{
   padding-left:10px;
+  position:relative;
+  top:-30px;
 
   & > div.line-separator > div.side-line{
 	width: 40%;
@@ -514,6 +516,11 @@ div.form-group-row{
 	margin-right: -3px;
 	margin-bottom: -4px;
 	background-color:#fff;
+  }
+
+  & > hr{
+	float:left;
+	width:74%
   }
 }
 

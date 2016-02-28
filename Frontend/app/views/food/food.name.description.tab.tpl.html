@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-md-8">
 
-                <form class="form-horizontal form-block view-mode">
+                <form class="form-food-name form-horizontal form-block view-mode">
                     <div class="small-field">
                         <div class="form-group">
                             <label for="int_food_name" class="col-sm-3 control-label">{{ 'FOOD_NAME' | translate}}</label>
@@ -18,11 +18,17 @@
                                 <input type="text" class="form-control" id="int_food_name" value="Red Guava">
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="int_food_source" class="col-sm-3 control-label">{{ 'FOOD_SOURCE' | translate}}</label>
 
-                            <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" id="int_food_source" value="-">
+                        <div class="form-group form-group-normalize">
+                            <label class="col-sm-3 control-label">{{ 'FOOD_SOURCE' | translate}}</label>
+                            <div class="col-sm-10 col-value">&nbsp;</div>
+                        </div>
+
+                        <div class="row form-group-row">
+                            <div class="line-separator">
+                                <div class="side-line"></div>
+                                <div class="triangle"></div>
+                                <div class="side-line"></div>
                             </div>
                         </div>
 
@@ -40,6 +46,7 @@
                                 <input type="text" class="form-control"  value="Maranhao">
                             </div>
                         </div>
+
                         <div class="form-group form-item-line">
                             <label class="col-sm-5 control-label">Red Guava</label>
 
@@ -47,8 +54,6 @@
                                 <input type="text" class="form-control"  value="Para">
                             </div>
                         </div>
-
-
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">{{ 'PART_OF_PLANT_ANIMAL' | translate}}</label>

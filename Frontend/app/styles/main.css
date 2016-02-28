@@ -559,7 +559,9 @@ form.form-block.view-mode textarea[readonly="readonly"] {
   border-radius: 3px !important; }
 
 div.form-group-row {
-  padding-left: 10px; }
+  padding-left: 10px;
+  position: relative;
+  top: -30px; }
   div.form-group-row > div.line-separator > div.side-line {
     width: 40%; }
   div.form-group-row > div.line-separator > div.triangle {
@@ -567,6 +569,9 @@ div.form-group-row {
     margin-right: -3px;
     margin-bottom: -4px;
     background-color: #fff; }
+  div.form-group-row > hr {
+    float: left;
+    width: 74%; }
 
 div.col-value {
   padding-left: 2px !important;
