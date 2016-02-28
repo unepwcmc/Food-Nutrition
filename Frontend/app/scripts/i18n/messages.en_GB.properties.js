@@ -70,7 +70,27 @@ define([],function ( ) {
     'FOOD_SPECIFIC_HANDLING':'Food specifiic handling fo sample before arrival at laboratory',
     'SAMPLING_HADLING_WHEN':'Sampling handling when the sample arrives at the laboratory',
     'STORAGE_CONDICTIONS_IN_THE':'Storage condictions in the laboratory before the start of the analytical process',
-    'REASON_FOR_ANALYSES':'Reason for analyses'
+    'REASON_FOR_ANALYSES':'Reason for analyses',
+    'BIBLIO_ID':'Biblio ID',
+    'REFERENCE_TYPE':'Reference tpe',
+    'AUTHOR':'Author',
+    'TITLE':'Title',
+    'PUBLISHER_JOURNAL':'Publisher/journal',
+    'PUBLISHER_LOCATION':'Publisher location',
+    'DATE_PUBLISHED':'date publisher',
+    'VOLUME_NUMBER':'Volume number',
+    'ISSUE_NUMBER':'Issue number',
+    'PAGES_NUMBER':'Pages number',
+    'DOI':'DOI',
+    'URL':'URL',
+    'ISBN':'ISBN',
+    'ISSN':'ISSN',
+    'DETAIL':'Detail',
+    'RECORDING_ORIGIN':'Recording origin',
+    'FOOD_CODE_IN_REFERENCE':'Food code in reference',
+    'FOOD_NAME_IN_REFERECE':'Food name in reference',
+    'MANDATORY_FIELD':'Mandatory field'
+
 
   }
 
