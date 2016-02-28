@@ -1124,3 +1124,7 @@ h3.food-header {
     font-size: 14px;
     font-weight: bolder;
     cursor: pointer; }
+
+h5.subtitle {
+  margin-top: 5px;
+  font-size: 18px; }
