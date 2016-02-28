@@ -574,6 +574,14 @@ div.col-value {
   div.col-value > input.form-control {
     padding: 6px 0 !important; }
 
+div.form-group.form-item-line {
+  border-bottom: solid 1px #EAEAEA;
+  width: 60%; }
+  div.form-group.form-item-line > label {
+    font-style: italic;
+    font-weight: 100;
+    text-align: left; }
+
 #loader-wrapper {
   position: fixed;
   top: 0;

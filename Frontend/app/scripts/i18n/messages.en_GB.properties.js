@@ -46,7 +46,12 @@ define([],function ( ) {
     'COLOUR':'Colour',
     'OTHER':'Other',
     'STORAGE_CONDICTION':'Storage condiction',
-    'GRADE':'Grade'
+    'GRADE':'Grade',
+    'OTHER_COMMON_NAMES':'Other common names',
+    'LIST_OF_INGREDIENTS':'List of Ingredients',
+    'INGREDIENTS':'Ingredients',
+    'RECIPE_PROCEDURE':'Recipe procedure',
+    'AMOUNT_G':'Amount(g)'
 
   }
 

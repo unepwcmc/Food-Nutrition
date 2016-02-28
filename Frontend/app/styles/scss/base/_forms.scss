@@ -525,3 +525,14 @@ div.col-value{
 	padding: 6px 0!important;
   }
 }
+
+div.form-group.form-item-line {
+  border-bottom: solid 1px #EAEAEA;
+  width:60%;
+
+  & > label{
+	font-style:italic;
+	font-weight:100;
+	text-align:left;
+  }
+}
