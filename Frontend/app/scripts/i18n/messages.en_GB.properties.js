@@ -51,7 +51,26 @@ define([],function ( ) {
     'LIST_OF_INGREDIENTS':'List of Ingredients',
     'INGREDIENTS':'Ingredients',
     'RECIPE_PROCEDURE':'Recipe procedure',
-    'AMOUNT_G':'Amount(g)'
+    'AMOUNT_G':'Amount(g)',
+    'OPTIONAL':'Optional',
+    'ORIGIN':'Origin',
+    'SAMPLING_PLACE':'Sampling place',
+    'COUNTRY_OF_ORIGIN':'Country of origin',
+    'STATE':'State',
+    'CITY':'City',
+    'LATITUDE':'Latitude',
+    'LONGITUDE':'Longitude',
+    'SAMPLING_PLAN':'Sampling plan',
+    'SAMPLING_SEASON_START':'Sampling season start',
+    'SAMPLING_SEASON_END':'Sampling season end',
+    'NUMBER_OF_FOOD_SAMPLES':'Number of food samples collected to construct analytical sample',
+    'NUMBER_OF_ANALYTICAL_SAMPLES':'Number of analytical samples, either individual or composite',
+    'NUMBER_OF_ANALYTICAL_REPLICATES':'Number of analytical replicates per sample',
+    'WEIGHTS_OF_FOOD_SAMPLES':'Weights of food samples as collected',
+    'FOOD_SPECIFIC_HANDLING':'Food specifiic handling fo sample before arrival at laboratory',
+    'SAMPLING_HADLING_WHEN':'Sampling handling when the sample arrives at the laboratory',
+    'STORAGE_CONDICTIONS_IN_THE':'Storage condictions in the laboratory before the start of the analytical process',
+    'REASON_FOR_ANALYSES':'Reason for analyses'
 
   }
 
