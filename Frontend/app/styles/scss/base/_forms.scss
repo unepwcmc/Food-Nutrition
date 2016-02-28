@@ -501,3 +501,18 @@ form.form-block.view-mode textarea[readonly="readonly"]{
   line-height: 1.2!important;
   border-radius: 3px!important;
 }
+
+div.form-group-row{
+  padding-left:10px;
+
+  & > div.line-separator > div.side-line{
+	width: 40%;
+  }
+
+  & > div.line-separator > div.triangle{
+	margin-left: -45px;
+	margin-right: -3px;
+	margin-bottom: -4px;
+	background-color:#fff;
+  }
+}
