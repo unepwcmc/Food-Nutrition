@@ -516,3 +516,12 @@ div.form-group-row{
 	background-color:#fff;
   }
 }
+
+div.col-value{
+  padding-left:2px!important;
+  margin-left:2px!important;
+
+  & > input.form-control{
+	padding: 6px 0!important;
+  }
+}

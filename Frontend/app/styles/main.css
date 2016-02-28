@@ -568,6 +568,12 @@ div.form-group-row {
     margin-bottom: -4px;
     background-color: #fff; }
 
+div.col-value {
+  padding-left: 2px !important;
+  margin-left: 2px !important; }
+  div.col-value > input.form-control {
+    padding: 6px 0 !important; }
+
 #loader-wrapper {
   position: fixed;
   top: 0;

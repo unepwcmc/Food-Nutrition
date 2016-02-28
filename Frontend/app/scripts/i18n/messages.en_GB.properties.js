@@ -29,7 +29,25 @@ define([],function ( ) {
     'ABOUT': 'About',
     'EDIT':'Edit',
     'CANCEL':'Cancel',
-    'SAVE':'Save'
+    'SAVE':'Save',
+
+    'FOOD_NAME':'Food name',
+    'FOOD_SOURCE':'Food source',
+    'PART_OF_PLANT_ANIMAL':'Part of plant/animal',
+    'MANUFACTURER':'Manufacturer',
+    'FOOD_PROCESSING':'Food processing',
+    'PRESERVATION_METHOD':'Preservation method',
+    'DEGREE_OF_COOKING':'Degree of cooking',
+    'AGRICULTURAL_PRODUCTION_CONDICTION':'Agricultural production condiction',
+    'MATURITY_OR_RIPENESS':'Maturity or ripeness',
+    'CONTAINER_OR_CONTACT_SURFACE':'Container or contact surface',
+    'PHYSICAL_STATE':'Physical state',
+    'SHAPE_OF_FORM':'Shape of form',
+    'COLOUR':'Colour',
+    'OTHER':'Other',
+    'STORAGE_CONDICTION':'Storage condiction',
+    'GRADE':'Grade'
+
   }
 
 });
