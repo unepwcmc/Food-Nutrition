@@ -1134,9 +1134,15 @@ h5.subtitle {
   margin-top: 5px;
   font-size: 18px; }
 
+.tabs-left {
+  margin-left: 0 !important; }
+
+.tabs-left-side-container {
+  padding: 0; }
+
 .tabs-left, .tabs-right {
   border-bottom: none;
-  padding-top: 2px; }
+  padding-top: 8px; }
 
 .tabs-left {
   border-right: 1px solid #ddd; }
@@ -1158,7 +1164,9 @@ h5.subtitle {
 .tabs-left > li.active > a:hover,
 .tabs-left > li.active > a:focus {
   border-bottom-color: #ddd;
-  border-right-color: transparent; }
+  margin-left: 0;
+  border-right: solid 1px #fff;
+  margin-right: -1px; }
 
 .tabs-right > li.active > a,
 .tabs-right > li.active > a:hover,
@@ -1168,7 +1176,7 @@ h5.subtitle {
 
 .tabs-left > li > a {
   border-radius: 4px 0 0 4px;
-  margin-right: 0;
+  margin-right: 1px;
   display: block; }
 
 .tabs-right > li > a {
