@@ -102,4 +102,71 @@ h5.subtitle{
   font-size:18px;
 }
 
+/* custom inclusion of right, left and below tabs */
+.tabs-left > .nav-tabs {
+  border-bottom: 0;
+}
+
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+  display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  display: block;
+}
+
+
+.tabs-left > .nav-tabs {
+  float: left;
+  margin-right: 19px;
+  border-right: solid 2px #ddd!important;
+
+  & >li:first-child{
+    margin-top:10px;
+  }
+
+  & .active > a,
+  & .active > a:hover,
+  & .active > a:focus {
+    border-color: #ddd transparent #ddd #ddd;
+    *border-right-color: #ffffff;
+    margin-right:-2px;
+  }
+
+
+  & > li.active > a,
+  & > li.active > a:hover,
+  & > li.active > a:focus {
+    color: #666;
+    font-weight: bolder;
+    background-color: $white;
+    margin-bottom: 10px;
+  }
+
+  & > li {
+    float: none;
+
+    & > a{
+      min-width: 74px;
+      margin-right: 0;
+      margin-bottom: 3px;
+      -webkit-border-radius: 4px 0 0 4px;
+      -moz-border-radius: 4px 0 0 4px;
+      border-radius: 4px 0 0 4px;
+      margin-left:-10px;
+      padding-right:30px;
+      color:#666!important;
+    }
+
+    & > a:hover , & >  a:focus{
+      border-color: #eeeeee #dddddd #eeeeee #eeeeee;
+    }
+  }
+}
+
+
+
+
 
