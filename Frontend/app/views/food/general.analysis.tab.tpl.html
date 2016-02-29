@@ -5,11 +5,10 @@
                 <h4><strong>{{'GENERAL_ANALYSIS' | translate}}</strong></h4>
             </div>
         </div>
-        <hr/>
         <div class="row">
             <!-- tabs left -->
-            <div class="tabbable tabs-left">
-                <ul class="nav nav-tabs">
+            <div class="col-xs-3">
+                <ul class="nav nav-tabs tabs-left">
                     <li class="active"><a href="#a" data-toggle="tab">{{'DENSITY' | translate}}</a></li>
                     <li><a href="#b" data-toggle="tab">Edible portion coefficient</a></li>
                     <li><a href="#c" data-toggle="tab">pH</a></li>
@@ -17,10 +16,12 @@
                     <li><a href="#e" data-toggle="tab">Food Size(unit)</a></li>
                     <li><a href="#f" data-toggle="tab">Food weight(unit)</a></li>
                 </ul>
+            </div>
+            <div class="col-xs-9">
                 <div class="tab-content">
                     <div class="tab-pane active" id="a">
 
-                        <div class="container">
+                        <div>
                             <h5><strong>{{'DENSITY' | translate}}</strong></h5>
 
                             <div class="well"><strong>126</strong>gl</div>
@@ -37,43 +38,50 @@
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'VALUE' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="126">
+                                            <input type="text" class="form-control" value="126">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'UNIT' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="millimeter">
+                                            <input type="text" class="form-control" value="millimeter">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'MATRIX_UNIT' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="Dolo">
+                                            <input type="text" class="form-control" value="Dolo">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'VALUE_TYPE' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="Loren">
+                                            <input type="text" class="form-control" value="Loren">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label">{{ 'ACQUISITION_TYPE' | translate}}</label>
+                                        <label class="col-sm-4 control-label">{{ 'ACQUISITION_TYPE' |
+                                            translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="Dolo">
+                                            <input type="text" class="form-control" value="Dolo">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'METHOD_TYPE' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="loren">
+                                            <input type="text" class="form-control" value="loren">
                                         </div>
                                     </div>
 
@@ -85,30 +93,35 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label">{{ 'STANDARD_DEVIATION' | translate}}</label>
+                                        <label class="col-sm-4 control-label">{{ 'STANDARD_DEVIATION' |
+                                            translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="1457">
+                                            <input type="text" class="form-control" value="1457">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'STANDARD_ERROR' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="4578">
+                                            <input type="text" class="form-control" value="4578">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'MINIMUM' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="145">
+                                            <input type="text" class="form-control" value="145">
                                         </div>
                                     </div>
 
-                                    <div class="form-group">
+                                    <div class="form-group form-group-normalize">
                                         <label class="col-sm-4 control-label">{{ 'MAXIMUM' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="7569">
+                                            <input type="text" class="form-control" value="7569">
                                         </div>
                                     </div>
 
@@ -120,23 +133,28 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label">{{ 'YEAR_OF_GENERATION' | translate}}</label>
+                                        <label class="col-sm-4 control-label">{{ 'YEAR_OF_GENERATION' |
+                                            translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="2015">
+                                            <input type="text" class="form-control" value="2015">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label class="col-sm-4 control-label">{{ 'DATE_OF_ENTRY' | translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="29-02-2015">
+                                            <input type="text" class="form-control" value="29-02-2015">
                                         </div>
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="col-sm-4 control-label">{{ 'DATE_OF_VALIDATION' | translate}}</label>
+                                        <label class="col-sm-4 control-label">{{ 'DATE_OF_VALIDATION' |
+                                            translate}}</label>
+
                                         <div class="col-sm-10 col-value">
-                                            <input type="text" class="form-control"  value="29-10-2015">
+                                            <input type="text" class="form-control" value="29-10-2015">
                                         </div>
                                     </div>
 
@@ -154,9 +172,9 @@
                     <div class="tab-pane" id="f">&nbsp;</div>
                 </div>
             </div>
-            <!-- /tabs -->
-
         </div>
+        <!-- /tabs -->
+
     </div>
 </section>
 

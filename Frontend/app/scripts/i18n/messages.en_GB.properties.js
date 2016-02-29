@@ -106,7 +106,14 @@ define([],function ( ) {
     'DATE_OF_VALIDATION':'Date of validation',
     'DATES':'Dates',
     'STATISTICS':'Statistics',
-    'VALUE_DOCUMENTATION':'Value documentation'
+    'VALUE_DOCUMENTATION':'Value documentation',
+    'WATER':'Water',
+    'SUM_PROXIMATE':'Sum proximate',
+    'ENERGY':'Energy',
+    'ASH':'ASH',
+    'PROTEIN':'Protein',
+    'LIPIDS':'Lipids',
+    'CARBOHYDRATES':'Carbohydrates'
 
 
   }
