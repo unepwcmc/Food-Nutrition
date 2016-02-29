@@ -89,7 +89,24 @@ define([],function ( ) {
     'RECORDING_ORIGIN':'Recording origin',
     'FOOD_CODE_IN_REFERENCE':'Food code in reference',
     'FOOD_NAME_IN_REFERECE':'Food name in reference',
-    'MANDATORY_FIELD':'Mandatory field'
+    'MANDATORY_FIELD':'Mandatory field',
+    'DENSITY':'Density',
+    'VALUE':'Value',
+    'UNIT':'Unit',
+    'MATRIX_UNIT':'Matrix unit',
+    'ACQUISITION_TYPE':'Acquisition type',
+    'METHOD_TYPE':'Method type',
+    'VALUE_TYPE':'Value type',
+    'STANDARD_DEVIATION':'Standart deviation',
+    'STANDARD_ERROR':'Standard error',
+    'MINIMUM':'Minimum',
+    'MAXIMUM':'Maximum',
+    'YEAR_OF_GENERATION':'Year of generation',
+    'DATE_OF_ENTRY':'Date of entry',
+    'DATE_OF_VALIDATION':'Date of validation',
+    'DATES':'Dates',
+    'STATISTICS':'Statistics',
+    'VALUE_DOCUMENTATION':'Value documentation'
 
 
   }

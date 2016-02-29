@@ -166,6 +166,30 @@ h5.subtitle{
   }
 }
 
+div.tab-pane.active > div.container > h5{
+  position:relative;
+  width:40%;
+  margin-left:200px;
+  margin-top:18px;
+}
+
+div.tab-pane.active > div.container > div.well{
+  position:relative;
+  width:40%;
+  margin-left:200px;
+  border-radius:0;
+  border:0;
+}
+
+div.tab-pane.active > div.container > form.form-horizontal > div.small-field > div.form-group{
+  position: relative;
+}
+
+div.tab-pane.active > div.container > form.form-horizontal > div.small-field > div.form-group.form-group-normalize{
+  margin-bottom:0;
+  padding-bottom:0;
+}
+
 
 
 

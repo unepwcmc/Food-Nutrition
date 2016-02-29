@@ -1179,3 +1179,23 @@ h5.subtitle {
       color: #666 !important; }
     .tabs-left > .nav-tabs > li > a:hover, .tabs-left > .nav-tabs > li > a:focus {
       border-color: #eeeeee #dddddd #eeeeee #eeeeee; }
+
+div.tab-pane.active > div.container > h5 {
+  position: relative;
+  width: 40%;
+  margin-left: 200px;
+  margin-top: 18px; }
+
+div.tab-pane.active > div.container > div.well {
+  position: relative;
+  width: 40%;
+  margin-left: 200px;
+  border-radius: 0;
+  border: 0; }
+
+div.tab-pane.active > div.container > form.form-horizontal > div.small-field > div.form-group {
+  position: relative; }
+
+div.tab-pane.active > div.container > form.form-horizontal > div.small-field > div.form-group.form-group-normalize {
+  margin-bottom: 0;
+  padding-bottom: 0; }
