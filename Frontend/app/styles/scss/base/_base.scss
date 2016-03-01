@@ -52,6 +52,15 @@ h4{
 h5{
 	font-size: 21px;
 	line-height: 30px;
+
+  &.form-control-static{
+	margin-top:5px;
+  }
+
+  &.subtitle{
+	margin-top:5px;
+	font-size:18px;
+  }
 }
 
 
