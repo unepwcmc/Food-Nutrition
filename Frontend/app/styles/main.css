@@ -1134,6 +1134,13 @@ h5.subtitle {
   margin-top: 5px;
   font-size: 18px; }
 
+div.tab-pane.active > h5 {
+  margin-top: 15px; }
+
+div.tab-pane.active > div.well {
+  border-radius: 0;
+  border: 0; }
+
 .tabs-left {
   margin-left: 0 !important; }
 
