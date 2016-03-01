@@ -72,7 +72,7 @@ define([],function ( ) {
     'STORAGE_CONDICTIONS_IN_THE':'Storage condictions in the laboratory before the start of the analytical process',
     'REASON_FOR_ANALYSIS':'Reason for analyses',
     'BIBLIO_ID':'Biblio ID',
-    'REFERENCE_TYPE':'Reference tpe',
+    'REFERENCE_TYPE':'Reference type',
     'AUTHOR':'Author',
     'TITLE':'Title',
     'PUBLISHER_JOURNAL':'Publisher/journal',
