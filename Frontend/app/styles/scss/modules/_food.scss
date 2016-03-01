@@ -133,6 +133,7 @@ div.tab-pane.active{
       border-radius: 4px 0 0 4px;
       margin-right: 1px;
       display:block;
+      color:#666!important;
     }
   }
 
@@ -143,14 +144,6 @@ div.tab-pane.active{
     margin-left:0;
     border-right: solid 1px #fff;
     margin-right:-1px;
-  }
-
-  & >li.active>a,
-  & >li.active>a:hover,
-  & >li.active>a:focus {
-    border-bottom-color: #ddd;
-    margin-left:0;
-    border-right: solid 1px #fff;
-    margin-right:-1px;
+    color:#666!important;
   }
 }
