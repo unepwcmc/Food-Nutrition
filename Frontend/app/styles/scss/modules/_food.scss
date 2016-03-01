@@ -11,7 +11,7 @@
   & > li.active > a,
   & > li.active > a:hover,
   & > li.active > a:focus {
-    color: $green;
+    color: $gray-fonts!important;
     font-weight: bolder;
     background-color: $white;
     margin-bottom: -1px;
@@ -21,7 +21,7 @@
   & > li > a,
   & > li > a:hover,
   & > li > a:focus {
-    color: $green !important;
+    color:$green !important;
     background-color: $white;
     border: 0;
     margin-left: 16px;
@@ -114,6 +114,11 @@ div.tab-pane.active{
 
 .tabs-left-side-container{
   padding:0
+}
+
+.tabs-left-side-container-mul{
+  padding:0;
+  margin-right: 10px;
 }
 
 .tabs-left{

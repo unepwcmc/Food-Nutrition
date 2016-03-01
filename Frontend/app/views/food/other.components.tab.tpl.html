@@ -5,9 +5,179 @@
                 <h4><strong>{{'OTHER_COMPONENTS' | translate}}</strong></h4>
             </div>
         </div>
-        <hr/>
         <div class="row">
-            <div class="col-md-12" style="height: 100px;">&nbsp;</div>
+            <!-- tabs left -->
+            <div class="col-xs-2 tabs-left-side-container-mul">
+                <ul class="nav nav-tabs tabs-left">
+                    <li><a>{{'BIOACTIVE_COMPUNDS' | translate}}</a></li>
+                    <li class="active"><a>{{'ORGANIC_ACIDS' | translate}}</a></li>
+                    <li><a>{{'STEROLS' | translate}}</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-2 tabs-left-side-container-mul">
+                <ul class="nav nav-tabs tabs-left">
+                    <li><a>{{'ACEAC' | translate}}(mg)</a></li>
+                    <li class="active"><a>{{'BENAC' | translate}}(mg)</a></li>
+                    <li><a>{{'FUMAC' | translate}}(mg)</a></li>
+                    <li><a>{{'MALAC' | translate}}(mg)</a></li>
+                    <li><a>{{'OXALAC' | translate}}(mg)</a></li>
+                    <li><a>{{'PHYTAC' | translate}}(mg)</a></li>
+                    <li><a>{{'QUINAC' | translate}}(mg)</a></li>
+                    <li><a>{{'SALAC' | translate}}(mg)</a></li>
+                    <li><a>{{'SHIKAC' | translate}}(mg)</a></li>
+                    <li><a>{{'SUCAC' | translate}}(mg)</a></li>
+                    <li><a>{{'TATAC' | translate}}(mg)</a></li>
+                    <li><a>{{'OA' | translate}}(mg)</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-5">
+                <div class="tab-content">
+                    <div class="tab-pane active">
+
+                        <h5><strong>BENAC(benzoic-acid)</strong></h5>
+
+                        <div class="well"><strong>111</strong>mg100 g EP</div>
+
+                        <form class="form-horizontal form-block view-mode">
+                            <div class="small-field">
+
+                                <div class="form-group form-group-normalize">
+                                    <div class="col-sm-10">
+                                        <h5 class="form-control-static">{{ 'VALUE_DOCUMENTATION' | translate}}</h5>
+                                        <hr/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'VALUE' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="126">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'UNIT' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="millimeter">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'MATRIX_UNIT' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="Dolo">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'VALUE_TYPE' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="Loren">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'ACQUISITION_TYPE' |
+                                        translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="Dolo">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'METHOD_TYPE' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="loren">
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-group-normalize">
+                                    <div class="col-sm-10">
+                                        <h5 class="form-control-static">{{ 'STATISTICS' | translate}}</h5>
+                                        <hr/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'STANDARD_DEVIATION' |
+                                        translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="1457">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'STANDARD_ERROR' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="4578">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'MINIMUM' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="145">
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-group-normalize">
+                                    <label class="col-sm-4 control-label">{{ 'MAXIMUM' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="7569">
+                                    </div>
+                                </div>
+
+                                <div class="form-group form-group-normalize">
+                                    <div class="col-sm-10">
+                                        <h5 class="form-control-static">{{ 'DATES' | translate}}</h5>
+                                        <hr/>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'YEAR_OF_GENERATION' |
+                                        translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="2015">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'DATE_OF_ENTRY' | translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="29-02-2015">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="col-sm-4 control-label">{{ 'DATE_OF_VALIDATION' |
+                                        translate}}</label>
+
+                                    <div class="col-sm-10 col-value">
+                                        <input type="text" class="form-control" value="29-10-2015">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- /tabs -->
+
     </div>
 </section>
+
