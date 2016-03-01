@@ -4,6 +4,8 @@
   & li {
     float: left;
     margin-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   & > li.active > a,
@@ -22,6 +24,7 @@
     color: $green !important;
     background-color: $white;
     border: 0;
+    margin-left: 16px;
   }
 
   & > li > a {
@@ -145,5 +148,6 @@ div.tab-pane.active{
     border-right: solid 1px #fff;
     margin-right:-1px;
     color:#666!important;
+    padding-left: 15px!important;
   }
 }
