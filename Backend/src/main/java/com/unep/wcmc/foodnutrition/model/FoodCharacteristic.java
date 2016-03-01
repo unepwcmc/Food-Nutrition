@@ -6,22 +6,15 @@ import javax.persistence.*;
 
 @Entity
 @Inheritance
-@DiscriminatorColumn(name = "nutrient_type")
-public abstract class Nutrient implements BaseEntity {
+@DiscriminatorColumn(name = "characteristic_type")
+public abstract class FoodCharacteristic implements BaseEntity {
 
-    static final String ENERGY = "ENERGY";
-    static final String WATER = "WATER";
-    static final String ASH = "ASH";
-    static final String PROTEIN = "PROTEIN";
-    static final String AMINO_ACID = "AMINO_ACID";
-    static final String LIPID = "LIPID";
-    static final String CARBOHYDRATE = "CARBOHYDRATE";
-    static final String VITAMIN = "VITAMIN";
-    static final String MINERAL = "MINERAL";
-    static final String ORGANIC_ACID = "ORGANIC_ACID";
-    static final String STEROL = "STEROL";
-    static final String BIOACTIVE_COMPUND = "BIOACTIVE_COMPUND";
-    static final String SUM_PROXIMATE = "SUM_PROXIMATE";
+    static final String DENSITY = "DENSITY";
+    static final String EDIBLE_PORTION = "EDIBLE_PORTION";
+    static final String PH = "PH";
+    static final String SOLID_SOLUBLE = "SOLID_SOLUBLE";
+    static final String FOOD_SIZE = "FOOD_SIZE";
+    static final String FOOD_WEIGHT = "FOOD_WEIGHT";
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -36,16 +29,10 @@ public abstract class Nutrient implements BaseEntity {
 
     private Float maxValue;
 
-    private Integer numStudies;
-
-    private Nutrient parent;
-
-    @Override
     public Long getId() {
         return id;
     }
 
-    @Override
     public void setId(Long id) {
         this.id = id;
     }
@@ -88,21 +75,5 @@ public abstract class Nutrient implements BaseEntity {
 
     public void setMaxValue(Float maxValue) {
         this.maxValue = maxValue;
-    }
-
-    public Integer getNumStudies() {
-        return numStudies;
-    }
-
-    public void setNumStudies(Integer numStudies) {
-        this.numStudies = numStudies;
-    }
-
-    public Nutrient getParent() {
-        return parent;
-    }
-
-    public void setParent(Nutrient parent) {
-        this.parent = parent;
     }
 }

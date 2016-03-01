@@ -4,7 +4,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue(Nutrient.LIPID)
-public class Lipid extends Nutrient {
+@DiscriminatorValue("NITROGEN")
+public class Nitrogen extends Nutrient {
     // Empty
 }
