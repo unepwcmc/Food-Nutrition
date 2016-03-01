@@ -97,7 +97,7 @@ define([],function ( ) {
     'ACQUISITION_TYPE':'Acquisition type',
     'METHOD_TYPE':'Method type',
     'VALUE_TYPE':'Value type',
-    'STANDARD_DEVIATION':'Standart deviation',
+    'STANDARD_DEVIATION':'Standard deviation',
     'STANDARD_ERROR':'Standard error',
     'MINIMUM':'Minimum',
     'MAXIMUM':'Maximum',
