@@ -7,21 +7,7 @@ import javax.persistence.*;
 @Entity
 @Inheritance
 @DiscriminatorColumn(name = "nutrient_type")
-public abstract class Nutrient implements BaseEntity {
-
-    static final String ENERGY = "ENERGY";
-    static final String WATER = "WATER";
-    static final String ASH = "ASH";
-    static final String PROTEIN = "PROTEIN";
-    static final String AMINO_ACID = "AMINO_ACID";
-    static final String LIPID = "LIPID";
-    static final String CARBOHYDRATE = "CARBOHYDRATE";
-    static final String VITAMIN = "VITAMIN";
-    static final String MINERAL = "MINERAL";
-    static final String ORGANIC_ACID = "ORGANIC_ACID";
-    static final String STEROL = "STEROL";
-    static final String BIOACTIVE_COMPUND = "BIOACTIVE_COMPUND";
-    static final String SUM_PROXIMATE = "SUM_PROXIMATE";
+public abstract class Nutrient implements BaseEntity, NutrientType {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

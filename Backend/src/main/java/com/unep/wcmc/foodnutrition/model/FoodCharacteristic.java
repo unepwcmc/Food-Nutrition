@@ -7,14 +7,7 @@ import javax.persistence.*;
 @Entity
 @Inheritance
 @DiscriminatorColumn(name = "characteristic_type")
-public abstract class FoodCharacteristic implements BaseEntity {
-
-    static final String DENSITY = "DENSITY";
-    static final String EDIBLE_PORTION = "EDIBLE_PORTION";
-    static final String PH = "PH";
-    static final String SOLID_SOLUBLE = "SOLID_SOLUBLE";
-    static final String FOOD_SIZE = "FOOD_SIZE";
-    static final String FOOD_WEIGHT = "FOOD_WEIGHT";
+public abstract class FoodCharacteristic implements BaseEntity, CharacteristicType {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
