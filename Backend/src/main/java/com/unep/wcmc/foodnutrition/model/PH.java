@@ -5,6 +5,6 @@ import javax.persistence.Entity;
 
 @Entity
 @DiscriminatorValue(value = FoodCharacteristic.PH)
-public class Ph extends FoodCharacteristic {
+public class PH extends FoodCharacteristic {
     // Empty
 }

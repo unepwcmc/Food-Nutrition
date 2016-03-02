@@ -20,7 +20,7 @@ public class GeneralAnalysis implements BaseEntity {
 
     @OneToOne
     @JoinColumn(name = "ph_id")
-    private Ph pH;
+    private PH pH;
 
     @OneToOne
     @JoinColumn(name = "solid_soluble_id")
@@ -60,11 +60,11 @@ public class GeneralAnalysis implements BaseEntity {
         this.ediblePortion = ediblePortion;
     }
 
-    public Ph getpH() {
+    public PH getpH() {
         return pH;
     }
 
-    public void setpH(Ph pH) {
+    public void setpH(PH pH) {
         this.pH = pH;
     }
 
