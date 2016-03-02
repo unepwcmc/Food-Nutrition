@@ -9,7 +9,7 @@ echo "Stopping the frontend..."
 sudo service nginx stop
 
 echo "Stopping the backend REST API..."
-sudo service biodiversity stop
+sudo service food-nutrition stop
 
 echo "Updating the project files..."
 sudo git stash
@@ -22,7 +22,7 @@ echo "Starting the backend REST API..."
 cd ./Backend
 sudo chmod +x ./gradlew
 sudo ./gradlew build -x test
-sudo service biodiversity start
+sudo service food-nutrition start
 
 echo "Starting the frontend..."
 cd ../Frontend
