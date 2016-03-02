@@ -2,10 +2,7 @@ package com.unep.wcmc.foodnutrition.model;
 
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class SamplingOrigin implements BaseEntity {
@@ -19,8 +16,12 @@ public class SamplingOrigin implements BaseEntity {
 
     private String city;
 
+    @ManyToOne
+    @JoinColumn(name = "state_id")
     private State state;
 
+    @ManyToOne
+    @JoinColumn(name = "country_id")
     private Country country;
 
     public Long getId() {

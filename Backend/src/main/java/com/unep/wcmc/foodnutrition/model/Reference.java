@@ -18,6 +18,7 @@ public class Reference implements BaseEntity {
     private String title;
 
     @ManyToOne
+    @JoinColumn(name = "reference_type_id")
     private ReferenceType type;
 
     @ElementCollection

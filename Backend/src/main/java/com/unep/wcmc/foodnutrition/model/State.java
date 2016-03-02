@@ -2,10 +2,7 @@ package com.unep.wcmc.foodnutrition.model;
 
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class State implements BaseEntity {
@@ -14,6 +11,10 @@ public class State implements BaseEntity {
     private Long id;
 
     private String name;
+
+    @ManyToOne
+    @JoinColumn(name = "country_id")
+    private Country country;
 
     @Override
     public Long getId() {
@@ -31,5 +32,13 @@ public class State implements BaseEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
     }
 }

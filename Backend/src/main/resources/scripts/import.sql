@@ -174,3 +174,32 @@ INSERT INTO reference_type (id, "name") VALUES (13, 'OTHER_REFERENCE_TYPE');
 INSERT INTO reference_type (id, "name") VALUES (6, 'JOURNAL_ISSUE');
 INSERT INTO reference_type (id, "name") VALUES (1, 'ARTICLE_IN_BOOK');
 
+-- Country
+INSERT INTO country (id, "name") VALUES(1, 'BRAZIL');
+
+-- State
+INSERT INTO "state" (id, "name", country_id) VALUES(1, 'SAO_PAULO', 1);
+
+
+-- ####### MOCK DATA - FOOD COMPOSITION #######
+INSERT INTO sampling_origin (id, city, latitude, longitude, country_id, state_id) VALUES (1, 'São Paulo', 46.6333, 23.55, 1, 1);
+INSERT INTO sampling (id, analysis_reason, analytical_replicates_number, analytical_samples_number, arrives_sample_handling, before_sample_handling, food_samples_number, food_samples_weights, plan, seasson_end, seasson_start, storage_conditions, sampling_origin_id) VALUES (1, 'analysis', 3, 3, 'wash, peel separated', 'Transport at -5C', 10, 3000.0, '10 fruits collected for each sample', TO_DATE('2016-03-13','YYYY-MM-DD'), TO_DATE('2016-01-13','YYYY-MM-DD'), 'Frozen -80C', 1);
+INSERT INTO reference (id, biblio_id, doi, isbn, issn, issue_number, pages_number, published_date, publisher, publisher_location, title, url, volume_number, origin_id, reference_type_id) VALUES (1, '1', NULL, NULL, NULL, 4, '55-67', TO_DATE('2016-01-01','YYYY-MM-DD'), 'Food Composition', 'London', 'Nutritional composition of red guava fruits', NULL, 1, NULL, 1);
+INSERT INTO reference_author (reference, authors) VALUES (1, 'Thomas Hazell');
+INSERT INTO reference_author (reference, authors) VALUES (1, 'Daniela Beltrame');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (6, NULL, NULL, 'FOOD_WEIGHT', NULL, 50.0, '6');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (3, NULL, NULL, 'PH', NULL, 6.0, '3');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (1, NULL, NULL, 'DENSITY', NULL, NULL, '1');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (5, NULL, NULL, 'FOOD_SIZE', NULL, 24.0, '5');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (2, NULL, NULL, 'EDIBLE_PORTION', NULL, 67.0, '2');
+INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (4, NULL, NULL, 'SOLID_SOLUBLE', NULL, NULL, '4');
+INSERT INTO general_analysis (id, density_id, edible_portion_id, food_size_id, food_weight_id, ph_id, solid_soluble_id) VALUES (1, 1, 2, 5, 6, 3, 4);
+INSERT INTO food (id, grade, manufacturer, "name", notes, recipe_procedure, scientific_name, shape_form, taxon_rank, agricultural_condition_id, colour_id, contact_surface_id, cooking_degree_id, general_analysis_id, physical_state_id, preservation_method_id, food_processing_id, ripeness_maturity_id, sampling_id, storage_condition_id, food_group_id, food_type_id, part_plant_animal_id, reference_id) VALUES (1, NULL, NULL, 'Red guava', NULL, NULL, 'Psidium cattleianum Sabine', NULL, 'Species', 1, 1, NULL, 1, 1,  1, NULL, 1, 1, 1, NULL, 6, 1, 6, 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (4, 1.0, 1.0, 'ALC', NULL, NULL, 1.0, '4', 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (5, 1.0, 1.0, 'PROTCNT', NULL, NULL, 1.0, '5', 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (2, 1.0, 1.0, 'WATER', NULL, NULL, 1.0, '2', 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (3, 1.0, 1.0, 'ASH', NULL, NULL, 1.0, '3', 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (1, 1.0, 1.0, 'ENERGY', NULL, NULL, 1.0, '1', 1);
+
+
+

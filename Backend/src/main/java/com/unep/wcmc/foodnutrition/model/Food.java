@@ -88,12 +88,16 @@ public class Food implements BaseEntity {
     private Sampling sampling;
 
     @OneToOne
+    @JoinColumn(name = "reference_id")
+    private Reference reference;
+
+    @OneToOne
     @JoinColumn(name = "general_analysis_id")
     private GeneralAnalysis generalAnalysis;
 
-    @OneToOne
-    @JoinColumn(name = "food_nutrients_id")
-    private FoodNutrients nutrients;
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name = "food_id")
+    private Set<Nutrient> nutrients;
 
     @Override
     public Long getId() {
@@ -273,11 +277,11 @@ public class Food implements BaseEntity {
         this.generalAnalysis = generalAnalysis;
     }
 
-    public FoodNutrients getNutrients() {
+    public Set<Nutrient> getNutrients() {
         return nutrients;
     }
 
-    public void setNutrients(FoodNutrients nutrients) {
+    public void setNutrients(Set<Nutrient> nutrients) {
         this.nutrients = nutrients;
     }
 
@@ -303,5 +307,13 @@ public class Food implements BaseEntity {
 
     public void setPartPlantAnimal(PartPlantAnimal partPlantAnimal) {
         this.partPlantAnimal = partPlantAnimal;
+    }
+
+    public Reference getReference() {
+        return reference;
+    }
+
+    public void setReference(Reference reference) {
+        this.reference = reference;
     }
 }

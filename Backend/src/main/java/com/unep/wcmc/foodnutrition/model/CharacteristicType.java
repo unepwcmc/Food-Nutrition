@@ -2,10 +2,10 @@ package com.unep.wcmc.foodnutrition.model;
 
 public interface CharacteristicType {
 
-    String DENSITY = "DENSITY";
-    String EDIBLE_PORTION = "EDIBLE_PORTION";
-    String PH = "PH";
-    String SOLID_SOLUBLE = "SOLID_SOLUBLE";
-    String FOOD_SIZE = "FOOD_SIZE";
-    String FOOD_WEIGHT = "FOOD_WEIGHT";
+    String DENSITY = "1";
+    String EDIBLE_PORTION = "2";
+    String PH = "3";
+    String SOLID_SOLUBLE = "4";
+    String FOOD_SIZE = "5";
+    String FOOD_WEIGHT = "6";
 }

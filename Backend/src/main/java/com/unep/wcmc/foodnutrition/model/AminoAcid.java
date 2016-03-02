@@ -4,7 +4,7 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity
-@DiscriminatorValue(Nutrient.AMINO_ACID)
+@DiscriminatorValue(NutrientType.AMINO_ACID)
 public class AminoAcid extends Nutrient {
     // Empty
 }

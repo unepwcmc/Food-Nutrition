@@ -24,8 +24,6 @@ public abstract class Nutrient implements BaseEntity, NutrientType {
 
     private Integer numStudies;
 
-    private Nutrient parent;
-
     @Override
     public Long getId() {
         return id;
@@ -82,13 +80,5 @@ public abstract class Nutrient implements BaseEntity, NutrientType {
 
     public void setNumStudies(Integer numStudies) {
         this.numStudies = numStudies;
-    }
-
-    public Nutrient getParent() {
-        return parent;
-    }
-
-    public void setParent(Nutrient parent) {
-        this.parent = parent;
     }
 }
