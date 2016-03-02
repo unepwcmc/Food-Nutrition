@@ -195,8 +195,7 @@ INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value"
 INSERT INTO food_characteristic (id, max_value, min_value, "name", unit, "value", characteristic_type) VALUES (4, NULL, NULL, 'SOLID_SOLUBLE', NULL, NULL, '4');
 INSERT INTO general_analysis (id, density_id, edible_portion_id, food_size_id, food_weight_id, ph_id, solid_soluble_id) VALUES (1, 1, 2, 5, 6, 3, 4);
 INSERT INTO food (id, grade, manufacturer, "name", notes, recipe_procedure, scientific_name, shape_form, taxon_rank, agricultural_condition_id, colour_id, contact_surface_id, cooking_degree_id, general_analysis_id, physical_state_id, preservation_method_id, food_processing_id, ripeness_maturity_id, sampling_id, storage_condition_id, food_group_id, food_type_id, part_plant_animal_id, reference_id) VALUES (1, NULL, NULL, 'Red guava', NULL, NULL, 'Psidium cattleianum Sabine', NULL, 'Species', 1, 1, NULL, 1, 1,  1, NULL, 1, 1, 1, NULL, 6, 1, 6, 1);
-INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (4, 1.0, 1.0, 'ALC', NULL, NULL, 1.0, '4', 1);
-INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (5, 1.0, 1.0, 'PROTCNT', NULL, NULL, 1.0, '5', 1);
+INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (4, 1.0, 1.0, 'ASP', NULL, NULL, 1.0, '6', 1);
 INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (2, 1.0, 1.0, 'WATER', NULL, NULL, 1.0, '2', 1);
 INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (3, 1.0, 1.0, 'ASH', NULL, NULL, 1.0, '3', 1);
 INSERT INTO nutrient (id, max_value, min_value, "name", num_studies, unit, "value", nutrient_type, food_id) VALUES (1, 1.0, 1.0, 'ENERGY', NULL, NULL, 1.0, '1', 1);
