@@ -13,6 +13,18 @@ public class Food implements BaseEntity {
 
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "food_type_id")
+    private FoodType foodType;
+
+    @ManyToOne
+    @JoinColumn(name = "food_group_id")
+    private FoodGroup foodGroup;
+
+    @ManyToOne
+    @JoinColumn(name = "part_plant_animal_id")
+    private PartPlantAnimal partPlantAnimal;
+
     private String scientificName;
 
     private String taxonRank;
@@ -267,5 +279,29 @@ public class Food implements BaseEntity {
 
     public void setNutrients(FoodNutrients nutrients) {
         this.nutrients = nutrients;
+    }
+
+    public FoodType getFoodType() {
+        return foodType;
+    }
+
+    public void setFoodType(FoodType foodType) {
+        this.foodType = foodType;
+    }
+
+    public FoodGroup getFoodGroup() {
+        return foodGroup;
+    }
+
+    public void setFoodGroup(FoodGroup foodGroup) {
+        this.foodGroup = foodGroup;
+    }
+
+    public PartPlantAnimal getPartPlantAnimal() {
+        return partPlantAnimal;
+    }
+
+    public void setPartPlantAnimal(PartPlantAnimal partPlantAnimal) {
+        this.partPlantAnimal = partPlantAnimal;
     }
 }

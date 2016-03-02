@@ -2,10 +2,8 @@ package com.unep.wcmc.foodnutrition.model;
 
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Recipe implements BaseEntity {
@@ -18,6 +16,10 @@ public class Recipe implements BaseEntity {
     private String additionalInformation;
 
     private String preparationMethod;
+
+    @OneToMany
+    @JoinColumn(name = "recipe_id")
+    private Set<RecipeIngredient> ingredients;
 
     @Override
     public Long getId() {
@@ -51,5 +53,13 @@ public class Recipe implements BaseEntity {
 
     public void setPreparationMethod(String preparationMethod) {
         this.preparationMethod = preparationMethod;
+    }
+
+    public Set<RecipeIngredient> getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(Set<RecipeIngredient> ingredients) {
+        this.ingredients = ingredients;
     }
 }
