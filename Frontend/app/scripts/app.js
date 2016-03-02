@@ -32,7 +32,7 @@ define(['include', 'language'], function (angularAMD, language) {
                     }))
                 .state('food', angularAMD.route(
                     {
-                        url: '/food',
+                        url: '/food/:id',
                         templateUrl: 'views/food/default.html',
                         controllerUrl: 'food/controllers/foodController'
 
