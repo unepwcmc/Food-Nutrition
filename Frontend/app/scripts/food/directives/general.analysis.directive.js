@@ -1,20 +1,18 @@
-define(['angularAMD'], function (angularAMD) {
+define(['angularAMD','food/directives/general.analysis.item.directive'], function (angularAMD) {
 
     'use strict';
 
-    angularAMD.directive('generalAnalysis', ['$timeout', '$rootScope', 'toastr',
-        function ( $timeout, $rootScope, toastr ) {
+    angularAMD.directive('generalAnalysis', [ '$rootScope', function ( $rootScope ) {
 
             return {
 
                 restrict: 'EA',
                 templateUrl: 'views/food/general.analysis.tab.tpl.html',
 
-                controller: ['$scope', '$http', '$rootScope', '$state', '$q',
-                    function( $scope, $http, $rootScope, $state, $q ) {
+                controller: ['$scope',function( $scope ) {
 
 
-                    }],
+                }],
                 link: function (scope, element, attrs) {
 
 
