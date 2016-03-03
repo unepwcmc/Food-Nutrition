@@ -16,7 +16,7 @@
                             <label for="int_food_name" class="col-sm-3 control-label">{{ 'BIBLIO_ID' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" id="int_food_name" value="02145">
+                                <input type="text" class="form-control" id="int_food_name" data-ng-model="food.reference.biblioId">
                             </div>
                         </div>
 
@@ -32,15 +32,15 @@
                             <label class="col-sm-3 control-label">{{ 'REFERENCE_TYPE' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="Alpha type">
+                                <input type="text" class="form-control" data-ng-model="food.reference.type.name">
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        <div ng-repeat="author in food.reference.authors" class="form-group">
                             <label class="col-sm-3 control-label">{{ 'AUTHOR' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="Tom Hazel">
+                                <input type="text" class="form-control" data-ng-model="{{ author }}">
                             </div>
                         </div>
 
@@ -48,7 +48,7 @@
                             <label class="col-sm-3 control-label">{{ 'TITLE' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="Healthy Benefits of Guava Fruit">
+                                <input type="text" class="form-control" data-ng-model="food.reference.title">
                             </div>
                         </div>
 
@@ -56,7 +56,7 @@
                             <label class="col-sm-3 control-label">{{ 'PUBLISHER_JOURNAL' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="Peguin Books BR">
+                                <input type="text" class="form-control" data-ng-model="food.reference.publisher">
                             </div>
                         </div>
 
@@ -64,7 +64,7 @@
                             <label class="col-sm-3 control-label">{{ 'PUBLISHER_LOCATION' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="São Paulo">
+                                <input type="text" class="form-control" data-ng-model="food.reference.publisherLocation">
                             </div>
                         </div>
 
@@ -72,7 +72,7 @@
                             <label class="col-sm-3 control-label">{{ 'DATE_PUBLISHED' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="12-05-2015">
+                                <input type="text" class="form-control" data-ng-model="food.reference.publishedDate">
                             </div>
                         </div>
 
@@ -80,7 +80,7 @@
                             <label class="col-sm-3 control-label">{{ 'VOLUME_NUMBER' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="27">
+                                <input type="text" class="form-control" data-ng-model="food.reference.volumeNumber">
                             </div>
                         </div>
 
@@ -88,7 +88,7 @@
                             <label class="col-sm-3 control-label">{{ 'ISSUE_NUMBER' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="15">
+                                <input type="text" class="form-control" data-ng-model="food.reference.issueNumber">
                             </div>
                         </div>
 
@@ -96,7 +96,7 @@
                             <label class="col-sm-3 control-label">{{ 'PAGES_NUMBER' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="From 5 to 7">
+                                <input type="text" class="form-control" data-ng-model="food.reference.pagesNumber">
                             </div>
                         </div>
 
@@ -104,7 +104,7 @@
                             <label class="col-sm-3 control-label">{{ 'DOI' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="12458754">
+                                <input type="text" class="form-control" data-ng-model="food.reference.doi">
                             </div>
                         </div>
 
@@ -112,7 +112,7 @@
                             <label class="col-sm-3 control-label">{{ 'URL' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="http://www.google.com/book">
+                                <input type="text" class="form-control" data-ng-model="food.reference.url">
                             </div>
                         </div>
 
@@ -120,7 +120,7 @@
                             <label class="col-sm-3 control-label">{{ 'ISBN' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="-">
+                                <input type="text" class="form-control" data-ng-model="food.reference.isbn">
                             </div>
                         </div>
 
@@ -128,7 +128,7 @@
                             <label class="col-sm-3 control-label">{{ 'ISSN' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="-">
+                                <input type="text" class="form-control" data-ng-model="food.reference.issn">
                             </div>
                         </div>
 
@@ -136,7 +136,7 @@
                             <label class="col-sm-5 control-label">{{ 'RECORDING_ORIGIN' | translate}}</label>
 
                             <div class="col-sm-5 col-value">
-                                <input type="text" class="form-control"  value="">
+                                <input type="text" class="form-control"  data-ng-model="food.reference.issn">
                             </div>
                         </div>
 
@@ -144,7 +144,7 @@
                             <label class="col-sm-3 control-label">{{ 'FOOD_CODE_IN_REFERENCE' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="110">
+                                <input type="text" class="form-control" data-ng-model="food.reference.origin.foodCode">
                             </div>
                         </div>
 
@@ -152,7 +152,7 @@
                             <label class="col-sm-3 control-label">{{ 'FOOD_NAME_IN_REFERECE' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="Dolo amet">
+                                <input type="text" class="form-control" data-ng-model="food.reference.origin.foodName">
                             </div>
                         </div>
 
