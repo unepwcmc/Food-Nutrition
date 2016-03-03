@@ -12,22 +12,22 @@
                     <div class="small-field">
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'FOOD_GROUP' | translate }} *</label>
-                            <div class="col-sm-6"><input type="text" class="form-control" value="Fruit"></div>
+                            <div class="col-sm-6"><input type="text" class="form-control" data-ng-model="food.foodGroup.name"></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'FOOD_TYPE' | translate }} *</label>
-                            <div class="col-sm-7"><input type="text" class="form-control" value="Lorem"></div>
+                            <div class="col-sm-7"><input type="text" class="form-control" data-ng-model="food.foodType.name"></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'TAXON_RANK' | translate }}</label>
-                            <div class="col-sm-7"><input type="text" class="form-control" value="Species"></div>
+                            <div class="col-sm-7"><input type="text" class="form-control" data-ng-model="food.taxonRank"></div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'SCIENTIFIC_NAME' | translate }}</label>
-                            <div class="col-sm-7"><input type="text" class="form-control" value="Psidium cattleianum Sabine"></div>
+                            <div class="col-sm-7"><input type="text" class="form-control" data-ng-model="food.scientificName"></div>
                         </div>
 
                         <div class="form-group form-group-normalize">
@@ -40,7 +40,7 @@
                                     <div class="triangle"></div>
                                     <div class="side-line"></div>
                                 </div>
-                            <textarea type="text" class="form-control">Covallis elementum</textarea>
+                            <textarea type="text" class="form-control">{{ food.notes }}</textarea>
                             <hr/>
                         </div>
                     </div>
