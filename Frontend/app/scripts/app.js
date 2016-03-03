@@ -131,8 +131,8 @@ define(['include', 'language'], function (angularAMD, language) {
         }]);
 
     app.CONST = {
-        LOCALHOST: "http://localhost:8080/", //LOCAL
-        //LOCALHOST:"http://ec2-54-207-106-173.sa-east-1.compute.amazonaws.com:8080/", // DEV
+        //LOCALHOST: "http://localhost:8080/", //LOCAL
+        LOCALHOST:"http://ec2-54-207-106-173.sa-east-1.compute.amazonaws.com:8080/", // DEV
         //LOCALHOST:"http://ec2-54-207-81-210.sa-east-1.compute.amazonaws.com:8080/", // QA
         //SERVER:"http://ec2-54-207-81-210.sa-east-1.compute.amazonaws.com:8080/", // QA
         SERVER: "http://ec2-54-207-106-173.sa-east-1.compute.amazonaws.com:8080/"  // DEV
