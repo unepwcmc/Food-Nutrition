@@ -31,7 +31,7 @@ public class Food implements BaseEntity {
 
     private String notes;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "food_id")
     private Set<FoodSource> sources;
 
@@ -71,7 +71,7 @@ public class Food implements BaseEntity {
     @JoinColumn(name = "contact_surface_id")
     private ContactSurfaceContainer contactSurface;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "food_id")
     private Set<FoodIngredient> ingredients;
 
