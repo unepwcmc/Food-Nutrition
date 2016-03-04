@@ -7,7 +7,7 @@ define([],function ( ) {
     'ENGLISH':'English',
     'PORTUGUESE':'Portuguese',
     'SEARCH':'Search',
-    'WELCOME_MESSAGE':'Welcome to the Biodiversity Food and Nutrition',
+    'WELCOME_MESSAGE':'Welcome to the Biodiversity Food and Nutrition Portal',
     'TRY_SEARCH':'Try a search!',
     'FOOD_COMPOSITION':'Food Composition',
     'RECIPES':'Recipes',
@@ -141,8 +141,53 @@ define([],function ( ) {
     'VITE_MINUS':'Vite-',
     'BIOACTIVE_COMPUNDS':'Bioactive compunds',
     'ORGANIC_ACIDS':'Organic acids',
-    'STEROLS':'Sterols'
+    'STEROLS':'Sterols',
 
+     // Food group
+    'LEGUMES_AND_DERIVATIVES': 'Legumes and derivatives',
+    'VEGETABLES': 'Vegetables',
+    'MILK': 'Milk',
+    'FISH_AND_SEAFOOD': 'Fish and seafood',
+    'MISCELLANEOUS': 'Miscellaneous',
+    'MEAT_AND_DERIVATIVES': 'Meat and derivatives',
+    'STARCHY_ROOTS_AND_TUBERS': 'Starchy Roots & Tubers',
+    'NUTS_AND_SEEDS': 'Nuts and seeds',
+    'HERBS_AND_SPICES': 'Herbs & spices',
+    'EGGS': 'Eggs',
+    'FRUITS_AND_DERIVATIVES': 'Fruits and derivatives',
+    'CEREALS_AND_DERIVATIVES': 'Cereals and derivatives',
+
+    // Food type
+    'MIXED': 'Mixed',
+    'SINGLE': 'Single',
+
+    // Cooking degree
+    'FULLY_COOKED': 'Fully cooked',
+    'MEDIUM': 'Medium',
+    'MEDIUM_WELL': 'Medium-well',
+    'PARTIALLY_COOKED': 'Partially cooked',
+    'RARE': 'Rare',
+    'WELL_DONE': 'Well done',
+    'MEDIUM_RARE': 'Medium-rare',
+    'RAW': 'Raw',
+
+    // Preservation method
+    'CANNED': 'Canned',
+    'ADDITIVES': 'Additives',
+    'CANNED_IN_OIL': 'Canned in oil',
+    'SALTED': 'Salted',
+    'PASTEURIZED': 'Pasteurized',
+    'BLANCHED': 'Blanched',
+    'IRRADIATED': 'Irradiated',
+    'SMOKED': 'Smoked',
+    'CHILLED': 'Chilled',
+    'CANNED_IN_SYRUP': 'Canned in syrup',
+    'FREEZE_DRIED': 'Freeze dried',
+    'STERLIZED': 'Sterlized',
+    'FILTRATED': 'Filtrated',
+    'VACUUM': 'Vacuum',
+    'CURED': 'Cured',
+    'FROZEN': 'Frozen'
 
   }
 

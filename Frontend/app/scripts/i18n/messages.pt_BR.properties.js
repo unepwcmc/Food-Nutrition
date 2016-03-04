@@ -7,7 +7,7 @@ define([],function ( ) {
     'ENGLISH':'Inglês',
     'PORTUGUESE':'Português',
     'SEARCH':'Pesquisar',
-    'WELCOME_MESSAGE':'Bem-vindo ao Portal de Alimentação e Nutrição',
+    'WELCOME_MESSAGE':'Bem-vindo ao Portal de Biodiversidade de Alimentação e Nutrição',
     'TRY_SEARCH':'Tente uma consulta!',
     'FOOD_COMPOSITION':'Composição de Alimentação',
     'RECIPES':'Receitas',
@@ -140,7 +140,53 @@ define([],function ( ) {
     'VITE_MINUS':'Vite-',
     'BIOACTIVE_COMPUNDS':'Compostos bioativos',
     'ORGANIC_ACIDS':'Ácidos orgânicos',
-    'STEROLS':'Esteróis'
+    'STEROLS':'Esteróis',
+
+    // Food group
+    'LEGUMES_AND_DERIVATIVES': 'Legumes e derivados',
+    'VEGETABLES': 'Vegetais',
+    'MILK': 'Leite',
+    'FISH_AND_SEAFOOD': 'Peixes e frutos do mar',
+    'MISCELLANEOUS': 'Variados',
+    'MEAT_AND_DERIVATIVES': 'Carnes e derivados',
+    'STARCHY_ROOTS_AND_TUBERS': 'Raízes ricas em amido & batatas',
+    'NUTS_AND_SEEDS': 'Nozes e sementes',
+    'HERBS_AND_SPICES': 'Ervas e especiarias',
+    'EGGS': 'Ovos',
+    'FRUITS_AND_DERIVATIVES': 'Frutas e derivados',
+    'CEREALS_AND_DERIVATIVES': 'Cereais e derivados',
+
+    // Food type
+    'MIXED': 'Misto',
+    'SINGLE': 'Simples',
+
+    // Cooking degree
+    'FULLY_COOKED': 'Totalmente cozido',
+    'MEDIUM': 'Passado',
+    'MEDIUM_WELL': 'Meio passado',
+    'PARTIALLY_COOKED': 'Parcialmente cozido',
+    'RARE': 'Mal passado',
+    'WELL_DONE': 'Bem passado',
+    'MEDIUM_RARE': 'Meio mal passado',
+    'RAW': 'Cru',
+
+    // Preservation method
+    'CANNED': 'Enlatado',
+    'ADDITIVES': 'Aditivos',
+    'CANNED_IN_OIL': 'Enlatado em óleo',
+    'SALTED': 'Salgado',
+    'PASTEURIZED': 'Pasteurizado',
+    'BLANCHED': 'Branqueado',
+    'IRRADIATED': 'Irradiado',
+    'SMOKED': 'Defumado',
+    'CHILLED': 'Gelado',
+    'CANNED_IN_SYRUP': 'Enlatado em calda',
+    'FREEZE_DRIED': 'Congelado a seco',
+    'STERLIZED': 'Esterelizado',
+    'FILTRATED': 'Filtrado',
+    'VACUUM': 'Vácuo',
+    'CURED': 'Curado',
+    'FROZEN': 'Congelado'
   }
 
 });
