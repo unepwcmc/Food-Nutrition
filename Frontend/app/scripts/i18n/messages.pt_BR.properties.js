@@ -113,6 +113,7 @@ define([],function ( ) {
     'VALUE_DOCUMENTATION':'Valor da documentação**',
     'WATER':'Água',
     'SUM_PROXIMATE':'Sum proximate**',
+    'SUM_PROXIMATES': 'Sum proximates',
     'ENERGY':'Energia',
     'ASH':'ASH',
     'PROTEIN':'Proteína',

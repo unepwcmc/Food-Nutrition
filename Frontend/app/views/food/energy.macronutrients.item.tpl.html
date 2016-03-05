@@ -1,4 +1,4 @@
-<h5><strong>{{ nutrient[key].name | translate }}</strong></h5>
+<h5><strong>{{ nutrient.nutrients[key].name | translate }}</strong></h5>
 
 <div class="well"><strong>126</strong>gl</div>
 
@@ -16,7 +16,7 @@
             <label class="col-sm-4 control-label">{{ 'VALUE' | translate}}</label>
 
             <div class="col-sm-10 col-value">
-                <input type="text" class="form-control" data-ng-model="nutrient[key].value" >
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].value" >
             </div>
         </div>
 
@@ -24,7 +24,7 @@
             <label class="col-sm-4 control-label">{{ 'UNIT' | translate}}</label>
 
             <div class="col-sm-10 col-value">
-                <input type="text" class="form-control" data-ng-model="nutrient[key].unit">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].unit">
             </div>
         </div>
 
@@ -88,7 +88,7 @@
             <label class="col-sm-4 control-label">{{ 'MINIMUM' | translate}}</label>
 
             <div class="col-sm-10 col-value">
-                <input type="text" class="form-control" data-ng-model="nutrient[key].minValue">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].minValue">
             </div>
         </div>
 
@@ -96,7 +96,7 @@
             <label class="col-sm-4 control-label">{{ 'MAXIMUM' | translate}}</label>
 
             <div class="col-sm-10 col-value">
-                <input type="text" class="form-control" data-ng-model="nutrient[key].maxValue">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].maxValue">
             </div>
         </div>
 

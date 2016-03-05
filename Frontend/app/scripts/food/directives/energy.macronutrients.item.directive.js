@@ -11,7 +11,7 @@ define(['angularAMD'], function (angularAMD) {
                 scope:{ nutrient: "=", key:'@' },
                 controller: ['$scope','$timeout', function( $scope, $timeout ) {
 
-                        console.log($scope.analysis);
+                        console.log($scope.key);
                 }],
                 link: function (scope, element, attrs) {
                 }
