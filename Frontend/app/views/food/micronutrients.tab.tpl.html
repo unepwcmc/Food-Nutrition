@@ -7,185 +7,87 @@
         </div>
         <div class="row">
             <!-- tabs left -->
-            <div class="col-xs-2 tabs-left-side-container-mul">
+            <div ui-tab class="col-xs-2 tabs-left-side-container-mul">
                 <ul class="nav nav-tabs tabs-left">
-                    <li><a>{{'MINERALS_AND_TRACE_ELEMENTS' | translate}}</a></li>
-                    <li class="active"><a>{{'VITAMINS' | translate}}</a></li>
+                    <li><a href="#a3" data-toggle="tab">{{'MINERALS_AND_TRACE_ELEMENTS' | translate}}</a></li>
+                    <li><a href="#b3" data-toggle="tab">{{'VITAMINS' | translate}}</a></li>
                 </ul>
             </div>
-            <div class="col-xs-2 tabs-left-side-container-mul">
-                <ul class="nav nav-tabs tabs-left">
-                    <li><a>{{'VITAMINS_A_AND_CAROTENOIDS' | translate}}</a></li>
-                    <li class="active"><a>{{'VITAMIN_E' | translate}}</a></li>
-                    <li><a>{{'VITAMIN_D' | translate}}</a></li>
-                    <li><a>{{'VITAMIN_K' | translate}}</a></li>
-                    <li><a>{{'THIAMIN_B1' | translate}}</a></li>
-                    <li><a>{{'RIBOFLAVIN_B2' | translate}}</a></li>
-                    <li><a>{{'NIACILIN' | translate}}</a></li>
-                    <li><a>{{'FOLATE' | translate}}</a></li>
-                    <li><a>{{'PANTHOTANIC_ACID' | translate}}</a></li>
-                    <li><a>{{'VITAMIN_B6' | translate}}</a></li>
-                    <li><a>{{'VITAMIN_B12' | translate}}</a></li>
-                    <li><a>{{'BIOTIN' | translate}}</a></li>
-                    <li><a>{{'VITAMIN_C' | translate}}</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-2 tabs-left-side-container-mul">
-                <ul class="nav nav-tabs tabs-left">
-                    <li><a>{{'VITE' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCPHA' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCPHB' | translate}}(mg)</a></li>
-                    <li class="active"><a>{{'TOCPHD' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCPHG' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCTRA' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCTRB' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCTRD' | translate}}(mg)</a></li>
-                    <li><a>{{'TOCTRG' | translate}}(mg)</a></li>
-                    <li><a>{{'VITE_MINUS' | translate}}(mg)</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-5">
+            <div class="col-xs-9">
                 <div class="tab-content">
-                    <div class="tab-pane active">
-
-                        <h5><strong>TOCPHD(delta-tocopherol)</strong></h5>
-
-                        <div class="well"><strong>111</strong>mg100 g EP</div>
-
-                        <form class="form-horizontal form-block view-mode">
-                            <div class="small-field">
-
-                                <div class="form-group form-group-normalize">
-                                    <div class="col-sm-10">
-                                        <h5 class="form-control-static">{{ 'VALUE_DOCUMENTATION' | translate}}</h5>
-                                        <hr/>
+                    <div class="tab-pane" id="a3"></div>
+                    <div class="tab-pane" id="b3">
+                        <div ui-tab class="col-xs-2 tabs-left-side-container-mul">
+                            <ul class="nav nav-tabs tabs-left">
+                                <li><a href="#a4" data-toggle="tab">{{'VITAMINS_A_AND_CAROTENOIDS' | translate}}</a></li>
+                                <li><a href="#b4" data-toggle="tab">{{'VITAMIN_E' | translate}}</a></li>
+                                <li><a>{{'VITAMIN_D' | translate}}</a></li>
+                                <li><a>{{'VITAMIN_K' | translate}}</a></li>
+                                <li><a>{{'THIAMIN_B1' | translate}}</a></li>
+                                <li><a>{{'RIBOFLAVIN_B2' | translate}}</a></li>
+                                <li><a>{{'NIACILIN' | translate}}</a></li>
+                                <li><a>{{'FOLATE' | translate}}</a></li>
+                                <li><a>{{'PANTHOTANIC_ACID' | translate}}</a></li>
+                                <li><a>{{'VITAMIN_B6' | translate}}</a></li>
+                                <li><a>{{'VITAMIN_B12' | translate}}</a></li>
+                                <li><a>{{'BIOTIN' | translate}}</a></li>
+                                <li><a>{{'VITAMIN_C' | translate}}</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-9">
+                            <div class="tab-content">
+                                <div class="tab-pane" id="a4">
+                                    <div class="col-xs-2 tabs-left-side-container-mul">
+                                        <div class="col-xs-2 tabs-left-side-container-mul">
+                                            <ul class="nav nav-tabs tabs-left">
+                                                <li><a>{{'VITA_RAE' | translate}}(mg)</a></li>
+                                                <li><a>{{'VITA' | translate}}(mg)</a></li>
+                                                <li><a>{{'RETOL' | translate}}(mg)</a></li>
+                                                <li><a>{{'VITAACT' | translate}}(mg)</a></li>
+                                                <li><a>{{'VITA-' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTOID' | translate}}(mg)</a></li>
+                                                <li><a>{{'ANTHX' | translate}}(mg)</a></li>
+                                                <li><a>{{'ATX' | translate}}(mg)</a></li>
+                                                <li><a>{{'CAROT' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTA' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTB' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTBCIS' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTBEQ' | translate}}(mg)</a></li>
+                                                <li><a>{{'CARTG' | translate}}(mg)</a></li>
+                                                <li><a>{{'CRYPX' | translate}}(mg)</a></li>
+                                                <li><a>{{'CRYPXA' | translate}}(mg)</a></li>
+                                                <li><a>{{'CRYPXB' | translate}}(mg)</a></li>
+                                                <li><a>{{'LUTN' | translate}}(mg)</a></li>
+                                                <li><a>{{'LUTNZEA' | translate}}(mg)</a></li>
+                                                <li><a>{{'LYNCPN' | translate}}(mg)</a></li>
+                                                <li><a>{{'NEOX' | translate}}(mg)</a></li>
+                                                <li><a>{{'NEUROSP' | translate}}(mg)</a></li>
+                                                <li><a>{{'VIOLX' | translate}}(mg)</a></li>
+                                                <li><a>{{'ZEA' | translate}}(mg)</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'VALUE' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="126">
+                                <div class="tab-pane" id="b4">
+                                    <div class="col-xs-2 tabs-left-side-container-mul">
+                                        <div class="col-xs-2 tabs-left-side-container-mul">
+                                            <ul class="nav nav-tabs tabs-left">
+                                                <li><a>{{'VITE' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCPHA' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCPHB' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCPHD' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCPHG' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCTRA' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCTRB' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCTRD' | translate}}(mg)</a></li>
+                                                <li><a>{{'TOCTRG' | translate}}(mg)</a></li>
+                                                <li><a>{{'VITE_MINUS' | translate}}(mg)</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'UNIT' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="millimeter">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'MATRIX_UNIT' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="Dolo">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'VALUE_TYPE' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="Loren">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'ACQUISITION_TYPE' |
-                                        translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="Dolo">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'METHOD_TYPE' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="loren">
-                                    </div>
-                                </div>
-
-                                <div class="form-group form-group-normalize">
-                                    <div class="col-sm-10">
-                                        <h5 class="form-control-static">{{ 'STATISTICS' | translate}}</h5>
-                                        <hr/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'STANDARD_DEVIATION' |
-                                        translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="1457">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'STANDARD_ERROR' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="4578">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'MINIMUM' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="145">
-                                    </div>
-                                </div>
-
-                                <div class="form-group form-group-normalize">
-                                    <label class="col-sm-4 control-label">{{ 'MAXIMUM' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="7569">
-                                    </div>
-                                </div>
-
-                                <div class="form-group form-group-normalize">
-                                    <div class="col-sm-10">
-                                        <h5 class="form-control-static">{{ 'DATES' | translate}}</h5>
-                                        <hr/>
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'YEAR_OF_GENERATION' |
-                                        translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="2015">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'DATE_OF_ENTRY' | translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="29-02-2015">
-                                    </div>
-                                </div>
-
-                                <div class="form-group">
-                                    <label class="col-sm-4 control-label">{{ 'DATE_OF_VALIDATION' |
-                                        translate}}</label>
-
-                                    <div class="col-sm-10 col-value">
-                                        <input type="text" class="form-control" value="29-10-2015">
-                                    </div>
-                                </div>
-
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
