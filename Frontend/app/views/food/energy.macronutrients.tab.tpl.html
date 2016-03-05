@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <!-- tabs left -->
-            <div class="col-xs-2 tabs-left-side-container">
+            <div ui-tab class="col-xs-2 tabs-left-side-container">
                 <ul class="nav nav-tabs tabs-left">
                     <li><a href="#a" data-toggle="tab">{{'ENERGY' | translate}}</a></li>
                     <li><a href="#b" data-toggle="tab">{{'SUM_PROXIMATE' | translate}}</a></li>
@@ -19,7 +19,7 @@
                 </ul>
             </div>
             <div class="col-xs-9">
-
+                <div class="tab-content">
                     <div class="tab-pane" id="a"><energy-macronutrients-item energy="food" key="density"></energy-macronutrients-item></div>
                     <div class="tab-pane" id="b"><energy-macronutrients-item energy="food" key="density"></energy-macronutrients-item></div>
                     <div class="tab-pane" id="c"><energy-macronutrients-item energy="food" key="density"></energy-macronutrients-item></div>
