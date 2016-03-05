@@ -17,4 +17,5 @@ public interface NutrientType {
     String STEROL = "13";
     String BIOACTIVE_COMPUND = "14";
     String SUM_PROXIMATE = "15";
+    String ALCOHOL = "16";
 }
