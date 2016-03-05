@@ -1,4 +1,4 @@
-define(['angularAMD'], function (angularAMD) {
+define(['angularAMD','food/directives/energy.macronutrients.item.directive'], function (angularAMD) {
 
     'use strict';
 

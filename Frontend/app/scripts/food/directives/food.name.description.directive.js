@@ -14,7 +14,7 @@ define(['angularAMD'], function (angularAMD) {
                     function( $scope, $http, $rootScope, $state, $q ) {
 
 
-                    }],
+                }],
                 link: function (scope, element, attrs) {
 
 
