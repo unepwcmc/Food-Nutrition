@@ -116,6 +116,7 @@ define([],function ( ) {
     'SUM_PROXIMATES': 'Sum proximates',
     'ENERGY':'Energia',
     'ASH':'ASH',
+    'ALCOHOL':'Álcool',
     'PROTEIN':'Proteína',
     'LIPIDS':'Liídios',
     'CARBOHYDRATES':'Carboidratos',
