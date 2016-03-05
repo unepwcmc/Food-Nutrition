@@ -3,6 +3,7 @@ package com.unep.wcmc.foodnutrition.model;
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
 import javax.persistence.*;
+import java.util.Map;
 import java.util.Set;
 
 @Entity
@@ -97,7 +98,8 @@ public class Food implements BaseEntity {
 
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "food_id")
-    private Set<Nutrient> nutrients;
+    @MapKey(name = "name")
+    private Map<String, Nutrient> nutrients;
 
     @Override
     public Long getId() {
@@ -277,11 +279,11 @@ public class Food implements BaseEntity {
         this.generalAnalysis = generalAnalysis;
     }
 
-    public Set<Nutrient> getNutrients() {
+    public Map<String, Nutrient> getNutrients() {
         return nutrients;
     }
 
-    public void setNutrients(Set<Nutrient> nutrients) {
+    public void setNutrients(Map<String, Nutrient> nutrients) {
         this.nutrients = nutrients;
     }
 
