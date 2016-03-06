@@ -98,8 +98,8 @@ public class Food implements BaseEntity {
 
     @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "food_id")
-    @MapKey(name = "name")
-    private Map<String, Nutrient> nutrients;
+    @MapKeyJoinColumn(name = "nutrient_type_id")
+    private Map<NutrientType, Nutrient> nutrients;
 
     @Override
     public Long getId() {
@@ -279,14 +279,6 @@ public class Food implements BaseEntity {
         this.generalAnalysis = generalAnalysis;
     }
 
-    public Map<String, Nutrient> getNutrients() {
-        return nutrients;
-    }
-
-    public void setNutrients(Map<String, Nutrient> nutrients) {
-        this.nutrients = nutrients;
-    }
-
     public FoodType getFoodType() {
         return foodType;
     }
@@ -317,5 +309,13 @@ public class Food implements BaseEntity {
 
     public void setReference(Reference reference) {
         this.reference = reference;
+    }
+
+    public Map<NutrientType, Nutrient> getNutrients() {
+        return nutrients;
+    }
+
+    public void setNutrients(Map<NutrientType, Nutrient> nutrients) {
+        this.nutrients = nutrients;
     }
 }

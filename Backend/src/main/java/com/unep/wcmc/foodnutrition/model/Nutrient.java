@@ -5,14 +5,10 @@ import com.unep.wcmc.foodnutrition.support.BaseEntity;
 import javax.persistence.*;
 
 @Entity
-@Inheritance
-@DiscriminatorColumn(name = "nutrient_type")
-public abstract class Nutrient implements BaseEntity, NutrientType {
+public class Nutrient implements BaseEntity, NutrientConstants {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
-    private String name;
 
     private MeasureUnit unit;
 
@@ -24,6 +20,10 @@ public abstract class Nutrient implements BaseEntity, NutrientType {
 
     private Integer numStudies;
 
+    @ManyToOne
+    @JoinColumn(name = "nutrient_type_id")
+    private NutrientType nutrientType;
+
     @Override
     public Long getId() {
         return id;
@@ -32,14 +32,6 @@ public abstract class Nutrient implements BaseEntity, NutrientType {
     @Override
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public MeasureUnit getUnit() {
@@ -80,5 +72,13 @@ public abstract class Nutrient implements BaseEntity, NutrientType {
 
     public void setNumStudies(Integer numStudies) {
         this.numStudies = numStudies;
+    }
+
+    public NutrientType getNutrientType() {
+        return nutrientType;
+    }
+
+    public void setNutrientType(NutrientType nutrientType) {
+        this.nutrientType = nutrientType;
     }
 }

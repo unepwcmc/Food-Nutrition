@@ -180,6 +180,9 @@ INSERT INTO country (id, "name") VALUES(1, 'BRAZIL');
 -- State
 INSERT INTO "state" (id, "name", country_id) VALUES(1, 'SAO_PAULO', 1);
 
+INSERT INTO nutrient_type (id, "name", parent_id) VALUES(1, 'PROTEIN', null);
+INSERT INTO nutrient_type (id, "name", parent_id) VALUES(2, 'PROTCNT', 1);
+
 
 -- ####### MOCK DATA - FOOD COMPOSITION #######
 INSERT INTO sampling_origin (id, city, latitude, longitude, country_id, state_id) VALUES (1, 'São Paulo', 46.6333, 23.55, 1, 1);
