@@ -249,8 +249,11 @@ define([],function ( ) {
     'AGROECOLOGICAL': 'Agroecological',
     'HAND_PICKED': 'Hand-picked',
     'WILD': 'Wild',
-    'ORGANIC': 'Organic'
+    'ORGANIC': 'Organic',
 
+    //PROTEIN TAB
+    'AMINO_ACIDS':'Amino Acids',
+    'NITROGEN_AND_CONVERSION_FACTORS':'Nitrogen and conversion factors'
   }
 
 });
