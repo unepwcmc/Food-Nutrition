@@ -1,21 +1,70 @@
 package com.unep.wcmc.foodnutrition.model;
 
-public interface NutrientType {
+import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
-    String ENERGY = "1";
-    String WATER = "2";
-    String ASH = "3";
-    String ALC = "4";
-    String PROTEIN = "5";
-    String AMINO_ACID = "6";
-    String NITROGEN = "7";
-    String LIPID = "8";
-    String CARBOHYDRATE = "9";
-    String VITAMIN = "10";
-    String MINERAL = "11";
-    String ORGANIC_ACID = "12";
-    String STEROL = "13";
-    String BIOACTIVE_COMPUND = "14";
-    String SUM_PROXIMATE = "15";
-    String ALCOHOL = "16";
+import javax.persistence.*;
+import java.util.Set;
+
+@Entity
+public class NutrientType implements BaseEntity {
+
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
+    @Enumerated(EnumType.STRING)
+    private MeasureUnit unit;
+
+    @ManyToOne
+    @JoinColumn(name = "parent_id")
+    private NutrientType parent;
+
+    @OneToMany(mappedBy = "parent")
+    private Set<NutrientType> children;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public MeasureUnit getUnit() {
+        return unit;
+    }
+
+    public void setUnit(MeasureUnit unit) {
+        this.unit = unit;
+    }
+
+    public NutrientType getParent() {
+        return parent;
+    }
+
+    public void setParent(NutrientType parent) {
+        this.parent = parent;
+    }
+
+    public Set<NutrientType> getChildren() {
+        return children;
+    }
+
+    public void setChildren(Set<NutrientType> children) {
+        this.children = children;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }
