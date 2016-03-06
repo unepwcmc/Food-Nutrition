@@ -30,6 +30,10 @@ define([],function ( ) {
     'EDIT':'Edit',
     'CANCEL':'Cancel',
     'SAVE':'Save',
+    'SIGN_IN':'Sign In',
+    'USERNAME':'Username',
+    'PASSWORD':'Password',
+    'FORGOT_PASSWORD':'Forgot passoword',
 
     'FOOD_NAME':'Food name',
     'FOOD_SOURCE':'Food source',
@@ -254,7 +258,12 @@ define([],function ( ) {
 
     //PROTEIN TAB
     'AMINO_ACIDS':'Amino Acids',
-    'NITROGEN_AND_CONVERSION_FACTORS':'Nitrogen and conversion factors'
+    'NITROGEN_AND_CONVERSION_FACTORS':'Nitrogen and conversion factors',
+    'FATTY_ACIDS_TOTALS':'Fatty acids totals',
+    'SATURATED':'Satured',
+    'MONOUNSATURATED':'Monounsaturated',
+    'POLYUNSATURATED':'Polyunsaturated',
+    'FAT_COMPONENTS':'Fat components'
   }
 
 });
