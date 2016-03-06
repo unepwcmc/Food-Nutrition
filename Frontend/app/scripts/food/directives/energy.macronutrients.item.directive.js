@@ -10,8 +10,6 @@ define(['angularAMD'], function (angularAMD) {
                 templateUrl: 'views/food/energy.macronutrients.item.tpl.html',
                 scope:{ nutrient: "=", key:'@' },
                 controller: ['$scope','$timeout', function( $scope, $timeout ) {
-
-                        console.log($scope.key);
                 }],
                 link: function (scope, element, attrs) {
                 }

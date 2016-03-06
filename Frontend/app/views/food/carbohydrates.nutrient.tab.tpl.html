@@ -1,0 +1,97 @@
+<div class="row">
+    <div ui-tab class="col-md-4">
+        <ul class="nav nav-tabs tabs-left">
+            <li><a href="#h21" data-toggle="tab">{{'CARBOHYDRATES' | translate}}</a></li>
+            <li><a href="#h22" data-toggle="tab">{{'FIBRE' | translate}}</a></li>
+            <li><a href="#h23" data-toggle="tab">{{'SUGARS' | translate}}</a></li>
+            <li><a href="#h24" data-toggle="tab">{{'POLYSACCHARIDES' | translate}}</a></li>
+            <li><a href="#h24" data-toggle="tab">{{'POLYOLS' | translate}}</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+
+            <!-- CARBOHYDRATES TAB -->
+            <div class="tab-pane" id="h21">
+                <div class="row">
+                    <div ui-tab class="col-xs-4">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'CARBOHYDRATES'"><a href="#h21{{ carbohydrate.nutrientType.name }}" data-toggle="tab">{{ carbohydrate.nutrientType.name | translate}}&nbsp;(g)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'CARBOHYDRATES'" class="tab-pane" id="h21{{ carbohydrate.nutrientType.name }}"><energy-macronutrients-item nutrient="food" key="carbohydrate.nutrientType.name"></energy-macronutrients-item></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIBRE TAB -->
+            <div class="tab-pane" id="h22">
+                <div class="row">
+                    <div ui-tab class="col-xs-4">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'FIBRE'"><a href="#h22{{ carbohydrate.nutrientType.name }}" data-toggle="tab">{{ carbohydrate.nutrientType.name | translate}}&nbsp;(g)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'FIBRE'" class="tab-pane" id="h22{{ carbohydrate.nutrientType.name }}"><energy-macronutrients-item nutrient="food" key="carbohydrate.nutrientType.name"></energy-macronutrients-item></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUGARS TAB -->
+            <div class="tab-pane" id="h23">
+                <div class="row">
+                    <div ui-tab class="col-xs-4">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'SUGARS'"><a href="#h23{{ carbohydrate.nutrientType.name }}" data-toggle="tab">{{ carbohydrate.nutrientType.name | translate}}&nbsp;(g)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'SUGARS'" class="tab-pane" id="h23{{ carbohydrate.nutrientType.name }}"><energy-macronutrients-item nutrient="food" key="carbohydrate.nutrientType.name"></energy-macronutrients-item></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POLYSACCHARIDES TAB -->
+            <div class="tab-pane" id="h24">
+                <div class="row">
+                    <div ui-tab class="col-xs-4">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'POLYSACCHARIDES'"><a href="#h24{{ carbohydrate.nutrientType.name }}" data-toggle="tab">{{ carbohydrate.nutrientType.name | translate}}&nbsp;(g)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'POLYSACCHARIDES'" class="tab-pane" id="h24{{ carbohydrate.nutrientType.name }}"><energy-macronutrients-item nutrient="food" key="carbohydrate.nutrientType.name"></energy-macronutrients-item></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POLYOLS TAB -->
+            <div class="tab-pane" id="h25">
+                <div class="row">
+                    <div ui-tab class="col-xs-4">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'POLYOLS'"><a href="#h25{{ carbohydrate.nutrientType.name }}" data-toggle="tab">{{ carbohydrate.nutrientType.name | translate}}&nbsp;(g)</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="carbohydrate in food.nutrients" ng-if="carbohydrate.nutrientType.parent.name == 'POLYOLS'" class="tab-pane" id="h25{{ carbohydrate.nutrientType.name }}"><energy-macronutrients-item nutrient="food" key="carbohydrate.nutrientType.name"></energy-macronutrients-item></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

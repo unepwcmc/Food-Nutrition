@@ -10,8 +10,6 @@ define(['angularAMD'], function (angularAMD) {
                 templateUrl: 'views/food/general.analysis.item.tpl.html',
                 scope:{ analysis: "=", key:'@' },
                 controller: ['$scope','$timeout', function( $scope, $timeout ) {
-
-                        console.log($scope.analysis);
                 }],
                 link: function (scope, element, attrs) {
                 }
