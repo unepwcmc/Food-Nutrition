@@ -254,7 +254,12 @@ define([],function ( ) {
 
     //PROTEIN TAB
     'AMINO_ACIDS':'Amino Acids',
-    'NITROGEN_AND_CONVERSION_FACTORS':'Nitrogen and conversion factors'
+    'NITROGEN_AND_CONVERSION_FACTORS':'Nitrogen and conversion factors',
+    'FATTY_ACIDS_TOTALS':'Fatty acids totals',
+    'SATURATED':'Satured',
+    'MONOUNSATURATED':'Monounsaturated',
+    'POLYUNSATURATED':'Polyunsaturated',
+    'FAT_COMPONENTS':'Fat components'
   }
 
 });
