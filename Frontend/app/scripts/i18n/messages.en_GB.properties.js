@@ -30,6 +30,10 @@ define([],function ( ) {
     'EDIT':'Edit',
     'CANCEL':'Cancel',
     'SAVE':'Save',
+    'SIGN_IN':'Sign In',
+    'USERNAME':'Username',
+    'PASSWORD':'Password',
+    'FORGOT_PASSWORD':'Forgot passoword',
 
     'FOOD_NAME':'Food name',
     'FOOD_SOURCE':'Food source',
