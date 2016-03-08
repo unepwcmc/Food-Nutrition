@@ -1,6 +1,7 @@
 define(['angularAMD',
         'core/factory/nutrientFactory',
-        'food/directives/energy.macronutrients.item.directive'], function (angularAMD) {
+        'food/directives/energy.macronutrients.item.directive',
+        'food/directives/nutrient.item.directive'], function (angularAMD) {
 
     'use strict';
 

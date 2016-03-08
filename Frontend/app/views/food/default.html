@@ -10,13 +10,14 @@
     <div class="page-header">
         <div class="container">
 
-            <ol class="breadcrumb">
+            <br/>
+            <ol style="display: none;" class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Administration</a></li>
                 <li class="active">New Record_Green Guava, pray, dry, organic: General Information</li>
             </ol>
 
-            <hr/>
+            <hr style="display: none;"/>
 
             <div style="display: none;" class="row associate_form">
                 <form class="form-inline">
@@ -41,7 +42,7 @@
                 <div class="col-md-10">
                     <h3 class="food-header">
                         <strong class="pull-left">{{ food.name }}</strong>
-                        <ul class="list-inline pull-left">
+                        <ul style="display: none;" class="list-inline pull-left">
                             <li><a >Basic report</a></li>
                             <li><a >Statics report</a></li>
                             <li class="dropdown">
@@ -85,8 +86,7 @@
                 <div ui-tab id="tabs">
 
                     <ul class="list-inline nav nav-tabs center-margin" role="tablist">
-                        <li class="active"><a href="#general-information">{{'GENERAL_INFORMATION' | translate }}</a>
-                        </li>
+                        <li class="active"><a href="#general-information">{{'GENERAL_INFORMATION' | translate }}</a></li>
                         <li><a href="#food-name-description">{{'FOOD_NAME_DESCRIPTION' | translate }}</a></li>
                         <li><a href="#sampling">{{'SAMPLING' | translate }}</a></li>
                         <li><a href="#reference">{{'REFERENCE' | translate }}</a></li>
@@ -97,17 +97,14 @@
                     </ul>
 
                     <div class="tab-content">
-                        <div class="tab-pane active center-margin" id="general-information" general-information
-                             edit-form></div>
-                        <div class="tab-pane center-margin" id="food-name-description" food-name-description
-                             edit-form></div>
-                        <div class="tab-pane center-margin" id="sampling" sampling edit-form></div>
-                        <div class="tab-pane center-margin" id="reference" reference edit-form></div>
-                        <div class="tab-pane center-margin" id="general-analysis" general-analysis edit-form></div>
-                        <div class="tab-pane center-margin" id="energy-macronutrients" energy-macronutrients
-                             edit-form></div>
-                        <div class="tab-pane center-margin" id="micronutrients" micronutrients edit-form></div>
-                        <div class="tab-pane center-margin" id="other-components" other-components edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane active center-margin" id="general-information" general-information edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="food-name-description" food-name-description edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="sampling" sampling edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="reference" reference edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="general-analysis" general-analysis edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="energy-macronutrients" energy-macronutrients edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="micronutrients" micronutrients edit-form></div>
+                        <div style="min-height: 600px;" class="tab-pane center-margin" id="other-components" other-components edit-form></div>
                     </div>
 
                 </div>
