@@ -20,7 +20,7 @@ public class NutrientType implements BaseEntity {
     @JoinColumn(name = "parent_id")
     private NutrientType parent;
 
-    @OneToMany(mappedBy = "parent")
+    @OneToMany(mappedBy = "parent", fetch = FetchType.EAGER)
     private Set<NutrientType> children;
 
     public Long getId() {
