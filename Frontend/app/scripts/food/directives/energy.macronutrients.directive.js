@@ -20,7 +20,7 @@ define(['angularAMD',
                         $scope.amino_acids = [];
                         $scope.nitrogen = [];
 
-                        nutrient.filterByType('PROTEIN', function( data, status){
+                        nutrient.filterByType('PROTEIN_TOTAL', function( data, status){
                             $scope.protein = data;
                         });
 

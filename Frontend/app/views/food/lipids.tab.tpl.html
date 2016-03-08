@@ -36,7 +36,7 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="saturated.nutrients[saturated.name] != null" ng-repeat="saturated in saturated._embedded.nutrientTypes">
+                            <li ng-show="food.nutrients[saturated.name] != null" ng-repeat="saturated in saturated._embedded.nutrientTypes">
                                 <a href="#g22{{ saturated.name }}" data-toggle="tab">{{ saturated.name | translate}}&nbsp;({{saturated.unit}})</a>
                             </li>
                         </ul>
