@@ -14,6 +14,8 @@ public class Food implements BaseEntity {
 
     private String name;
 
+    private String description;
+
     @ManyToOne
     @JoinColumn(name = "food_type_id")
     private FoodType foodType;
@@ -117,6 +119,14 @@ public class Food implements BaseEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getScientificName() {
