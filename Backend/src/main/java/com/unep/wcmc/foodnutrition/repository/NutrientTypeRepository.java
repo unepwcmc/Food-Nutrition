@@ -8,13 +8,11 @@ import org.springframework.data.rest.core.annotation.RestResource;
 
 import java.util.List;
 
-@RepositoryRestResource(path = "/nutrient-types")
+@RepositoryRestResource(path = "/nutrient-types", excerptProjection = NutrientTypeProjection.class)
 public interface NutrientTypeRepository extends AbstractRepository<NutrientType> {
 
     @RestResource(path = "nutrients")
     List<NutrientType> findByParentName(@Param("parent") String parent);
 
-    @RestResource(path = "name")
-    NutrientType findByName(@Param("name") String name);
-
 }
+

@@ -1,12 +1,13 @@
 package com.unep.wcmc.foodnutrition.model;
 
+import com.unep.wcmc.foodnutrition.repository.NutrientTypeProjection;
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class NutrientType implements BaseEntity {
+public class NutrientType implements BaseEntity, NutrientTypeProjection {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
