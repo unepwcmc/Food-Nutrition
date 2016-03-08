@@ -21,7 +21,7 @@ public class NutrientType implements BaseEntity, NutrientTypeProjection {
     @JoinColumn(name = "parent_id")
     private NutrientType parent;
 
-    @OneToMany(mappedBy = "parent", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "parent")
     private Set<NutrientType> children;
 
     public Long getId() {
