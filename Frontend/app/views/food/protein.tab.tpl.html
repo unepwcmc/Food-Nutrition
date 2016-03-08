@@ -12,18 +12,18 @@
             <!-- PROTEIN TAB -->
             <div class="tab-pane" id="e21">
                 <div class="row">
-                    <div ui-tab class="col-xs-4">
+                    <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li><a href="#e211" data-toggle="tab">{{'PROTCNT' | translate}}&nbsp;(g)</a></li>
-                            <li><a href="#e212" data-toggle="tab">{{'PROTCNA' | translate}}&nbsp;(g)</a></li>
-                            <li><a href="#e213" data-toggle="tab">{{'PROT-' | translate}}&nbsp;(g)</a></li>
+                            <li ng-show="food.nutrients[protein.name] != null" ng-repeat="protein in protein._embedded.nutrientTypes">
+                                <a href="#e21{{ protein.name }}" data-toggle="tab">{{ protein.name | translate}}&nbsp;({{protein.unit | translate}})</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div class="tab-pane" id="e211"><energy-macronutrients-item nutrient="food" key="PROTCNT"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e212"><energy-macronutrients-item nutrient="food" key="PROTCNA"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e213"><energy-macronutrients-item nutrient="food" key="PROT-"></energy-macronutrients-item></div>
+                            <div ng-repeat="protein in protein._embedded.nutrientTypes" class="tab-pane" id="e21{{ protein.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="protein.name"></nutrient-item>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -31,62 +31,19 @@
 
             <!-- AMINO_ACIDS TAB -->
             <div class="tab-pane" id="e22">
-
                 <div class="row">
-                    <div ui-tab class="col-xs-4">
+                    <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li><a href="#e221" data-toggle="tab">{{'AAT24' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e222" data-toggle="tab">{{'ALA' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e223" data-toggle="tab">{{'ARG' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e224" data-toggle="tab">{{'ASN' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e225" data-toggle="tab">{{'ASP' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e226" data-toggle="tab">{{'CYS' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e227" data-toggle="tab">{{'GLN' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e228" data-toggle="tab">{{'GLU' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e229" data-toggle="tab">{{'GLY' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2210" data-toggle="tab">{{'HIS' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2211" data-toggle="tab">{{'HYP' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2212" data-toggle="tab">{{'ILE' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2213" data-toggle="tab">{{'LEU' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2214" data-toggle="tab">{{'LYS' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2215" data-toggle="tab">{{'MET' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2216" data-toggle="tab">{{'ORN' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2217" data-toggle="tab">{{'PHE' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2218" data-toggle="tab">{{'PRO' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2219" data-toggle="tab">{{'SER' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2220" data-toggle="tab">{{'TAU' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2221" data-toggle="tab">{{'THR' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2222" data-toggle="tab">{{'TRP' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2223" data-toggle="tab">{{'TYR' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e2224" data-toggle="tab">{{'VAL' | translate}}&nbsp;(mg)</a></li>
+                            <li ng-show="food.nutrients[amino.name] != null" ng-repeat="amino in amino_acids._embedded.nutrientTypes">
+                                <a href="#e22{{ amino.name }}" data-toggle="tab">{{ amino.name | translate}}&nbsp;({{amino.unit | translate}})</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div class="tab-pane" id="e221"><energy-macronutrients-item nutrient="food" key="AAT24"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e222"><energy-macronutrients-item nutrient="food" key="ALA"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e223"><energy-macronutrients-item nutrient="food" key="ARG"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e224"><energy-macronutrients-item nutrient="food" key="ASN"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e225"><energy-macronutrients-item nutrient="food" key="ASP"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e226"><energy-macronutrients-item nutrient="food" key="CYS"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e227"><energy-macronutrients-item nutrient="food" key="GLN"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e228"><energy-macronutrients-item nutrient="food" key="GLU"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e229"><energy-macronutrients-item nutrient="food" key="GLY"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2210"><energy-macronutrients-item nutrient="food" key="HIS"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2211"><energy-macronutrients-item nutrient="food" key="HYP"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2212"><energy-macronutrients-item nutrient="food" key="ILE"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2213"><energy-macronutrients-item nutrient="food" key="LEU"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2214"><energy-macronutrients-item nutrient="food" key="LYS"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2215"><energy-macronutrients-item nutrient="food" key="MET"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2216"><energy-macronutrients-item nutrient="food" key="ORN"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2217"><energy-macronutrients-item nutrient="food" key="PHE"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2218"><energy-macronutrients-item nutrient="food" key="PRO"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2219"><energy-macronutrients-item nutrient="food" key="SER"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2220"><energy-macronutrients-item nutrient="food" key="TAU"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2221"><energy-macronutrients-item nutrient="food" key="THR"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2222"><energy-macronutrients-item nutrient="food" key="TRP"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2223"><energy-macronutrients-item nutrient="food" key="TYR"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e2224"><energy-macronutrients-item nutrient="food" key="VAL"></energy-macronutrients-item></div>
+                            <div ng-repeat="amino in amino_acids._embedded.nutrientTypes" class="tab-pane" id="e22{{ amino.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="amino.name"></nutrient-item>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -95,25 +52,23 @@
             <!-- NITROGEN_AND_CONVERSION_FACTORS TAB -->
             <div class="tab-pane" id="e23">
                 <div class="row">
-                    <div ui-tab class="col-xs-4">
+                    <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li><a href="#e231" data-toggle="tab">{{'XN' | translate}}</a></li>
-                            <li><a href="#e232" data-toggle="tab">{{'NT' | translate}})</a></li>
-                            <li><a href="#e233" data-toggle="tab">{{'NNP' | translate}}&nbsp;(mg)</a></li>
-                            <li><a href="#e234" data-toggle="tab">{{'NPRO' | translate}}&nbsp;(g)</a></li>
+                            <li ng-show="food.nutrients[nitrogen.name] != null" ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes">
+                                <a href="#e23{{ nitrogen.name }}" data-toggle="tab">{{ nitrogen.name | translate}}&nbsp;({{nitrogen.unit | translate}})</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div class="tab-pane" id="e231"><energy-macronutrients-item nutrient="food" key="XN"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e232"><energy-macronutrients-item nutrient="food" key="NT"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e233"><energy-macronutrients-item nutrient="food" key="NNP"></energy-macronutrients-item></div>
-                            <div class="tab-pane" id="e234"><energy-macronutrients-item nutrient="food" key="NPRO"></energy-macronutrients-item></div>
+                            <div ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes" class="tab-pane" id="e23{{ nitrogen.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="nitrogen.name"></nutrient-item>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
+
     </div>
 </div>
