@@ -1,0 +1,95 @@
+<div class="row">
+    <div ui-tab class="col-md-4">
+        <ul class="nav nav-tabs tabs-left">
+            <li><a href="#aa4" data-toggle="tab">{{'FLAVONOIDS' | translate}}</a></li>
+            <li><a href="#ab4" data-toggle="tab">{{'TANNINS' | translate}}</a></li>
+            <li><a href="#ac4" data-toggle="tab">{{'PHENOLIC_ACIDS' | translate}}</a></li>
+            <li><a href="#ad4" data-toggle="tab">{{'OTHER' | translate}}</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+
+            <!-- FLAVONOIDS TAB -->
+            <div class="tab-pane" id="aa4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="fl in flavonoids._embedded.nutrientTypes">
+                                <a href="#aa4{{ fl.name }}" data-toggle="tab">{{ fl.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="fl in flavonoids._embedded.nutrientTypes" class="tab-pane" id="aa4{{ fl.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="fl.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TANNINS TAB -->
+            <div class="tab-pane" id="ab4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="ta in tannins._embedded.nutrientTypes">
+                                <a href="#ab4{{ ta.name }}" data-toggle="tab">{{ ta.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="ta in tannins._embedded.nutrientTypes" class="tab-pane" id="ab4{{ ta.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="ta.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PHENOLIC_ACIDS TAB -->
+            <div class="tab-pane" id="ac4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="pa in phenolic_acids._embedded.nutrientTypes">
+                                <a href="#ac4{{ pa.name }}" data-toggle="tab">{{ pa.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="pa in phenolic_acids._embedded.nutrientTypes" class="tab-pane" id="ac4{{ pa.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="pa.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTHER TAB -->
+            <div class="tab-pane" id="ad4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="other in bioactive_others._embedded.nutrientTypes">
+                                <a href="#ad4{{ other.name }}" data-toggle="tab">{{ other.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="other in bioactive_others._embedded.nutrientTypes" class="tab-pane" id="ad4{{ other.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="other.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

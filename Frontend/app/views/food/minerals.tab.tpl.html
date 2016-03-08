@@ -1,0 +1,53 @@
+<div class="row">
+    <div ui-tab class="col-md-4">
+        <ul class="nav nav-tabs tabs-left">
+            <li><a href="#aa3" data-toggle="tab">{{'MINERALS' | translate}}</a></li>
+            <li><a href="#ab3" data-toggle="tab">{{'TOXIC_TRACE_ELEMENTS_CONTAMINANTS' | translate}}</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+
+            <!-- CARBOHYDRATES TAB -->
+            <div class="tab-pane" id="aa3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="mineral in minerals._embedded.nutrientTypes">
+                                <a href="#aa3{{ mineral.name }}" data-toggle="tab">{{ mineral.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="mineral in minerals._embedded.nutrientTypes" class="tab-pane" id="aa3{{ mineral.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="mineral.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIBRE TAB -->
+            <div class="tab-pane" id="ab3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="toxic in toxic_elements._embedded.nutrientTypes">
+                                <a href="#ab3{{ toxic.name }}" data-toggle="tab">{{ toxic.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="toxic in toxic_elements._embedded.nutrientTypes" class="tab-pane" id="ab3{{ toxic.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="toxic.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

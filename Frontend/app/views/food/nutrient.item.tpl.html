@@ -1,0 +1,137 @@
+<h5><strong>{{ nutrient.nutrients[key].name | translate }}</strong></h5>
+
+<div class="well"><strong>126</strong>gl</div>
+
+<form class="form-horizontal form-block view-mode">
+    <div class="small-field">
+
+        <div class="form-group form-group-normalize">
+            <div class="col-sm-10">
+                <h5 class="form-control-static">{{ 'VALUE_DOCUMENTATION' | translate}}</h5>
+                <hr/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'VALUE' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].value" >
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'UNIT' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].unit">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'MATRIX_UNIT' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'VALUE_TYPE' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'ACQUISITION_TYPE' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'METHOD_TYPE' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group form-group-normalize">
+            <div class="col-sm-10">
+                <h5 class="form-control-static">{{ 'STATISTICS' | translate}}</h5>
+                <hr/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'STANDARD_DEVIATION' |
+                translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'STANDARD_ERROR' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'MINIMUM' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].minValue">
+            </div>
+        </div>
+
+        <div class="form-group form-group-normalize">
+            <label class="col-sm-4 control-label">{{ 'MAXIMUM' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control" data-ng-model="nutrient.nutrients[key].maxValue">
+            </div>
+        </div>
+
+        <div class="form-group form-group-normalize">
+            <div class="col-sm-10">
+                <h5 class="form-control-static">{{ 'DATES' | translate}}</h5>
+                <hr/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'YEAR_OF_GENERATION' |
+                translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'DATE_OF_ENTRY' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-sm-4 control-label">{{ 'DATE_OF_VALIDATION' | translate}}</label>
+
+            <div class="col-sm-10 col-value">
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+    </div>
+</form>
+

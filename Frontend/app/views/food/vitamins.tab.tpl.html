@@ -1,0 +1,284 @@
+<div class="row">
+    <div ui-tab class="col-md-4">
+        <ul class="nav nav-tabs tabs-left">
+            <li><a href="#ba3" data-toggle="tab">{{'VITAMIN_A_CAROTENOIDS' | translate}}</a></li>
+            <li><a href="#bb3" data-toggle="tab">{{'VITAMIN_E' | translate}}</a></li>
+            <li><a href="#bc3" data-toggle="tab">{{'VITAMIN_D' | translate}}</a></li>
+            <li><a href="#bd3" data-toggle="tab">{{'VITAMIN_K' | translate}}</a></li>
+            <li><a href="#be3" data-toggle="tab">{{'THIAMIN_B1' | translate}}</a></li>
+            <li><a href="#bf3" data-toggle="tab">{{'RIBOFLAVIN_B2' | translate}}</a></li>
+            <li><a href="#bg3" data-toggle="tab">{{'NIACIIN' | translate}}</a></li>
+            <li><a href="#bh3" data-toggle="tab">{{'FOLATE' | translate}}</a></li>
+            <li><a href="#bi3" data-toggle="tab">{{'PANTHOTENIC_ACID' | translate}}</a></li>
+            <li><a href="#bj3" data-toggle="tab">{{'VITAMIN_B6' | translate}}</a></li>
+            <li><a href="#bk3" data-toggle="tab">{{'VITAMIN_B12' | translate}}</a></li>
+            <li><a href="#bl3" data-toggle="tab">{{'BIOTIN' | translate}}</a></li>
+            <li><a href="#bm3" data-toggle="tab">{{'VITAMIN_C' | translate}}</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+
+            <!-- VITAMIN_A_CAROTENOIDS TAB -->
+            <div class="tab-pane" id="ba3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="va in vitamin_a._embedded.nutrientTypes">
+                                <a href="#ba3{{ va.name }}" data-toggle="tab">{{ va.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="va in vitamin_a._embedded.nutrientTypes" class="tab-pane" id="ba3{{ va.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="va.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_E TAB -->
+            <div class="tab-pane" id="bb3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="ve in vitamin_e._embedded.nutrientTypes">
+                                <a href="#bb3{{ ve.name }}" data-toggle="tab">{{ ve.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="ve in vitamin_e._embedded.nutrientTypes" class="tab-pane" id="bb3{{ ve.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="ve.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_D TAB -->
+            <div class="tab-pane" id="bc3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="vd in vitamin_d._embedded.nutrientTypes">
+                                <a href="#bc3{{ vd.name }}" data-toggle="tab">{{ vd.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="vd in vitamin_d._embedded.nutrientTypes" class="tab-pane" id="bc3{{ vd.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="vd.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_K TAB -->
+            <div class="tab-pane" id="bd3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="vk in vitamin_k._embedded.nutrientTypes">
+                                <a href="#bd3{{ vk.name }}" data-toggle="tab">{{ vk.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="vk in vitamin_k._embedded.nutrientTypes" class="tab-pane" id="bd3{{ vk.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="vk.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIAMIN_B1 TAB -->
+            <div class="tab-pane" id="be3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="tb in thiamin_b1._embedded.nutrientTypes">
+                                <a href="#be3{{ tb.name }}" data-toggle="tab">{{ tb.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="tb in thiamin_b1._embedded.nutrientTypes" class="tab-pane" id="be3{{ tb.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="tb.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIBOFLAVIN_B2 TAB -->
+            <div class="tab-pane" id="bf3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="rb in riboflavin_b2._embedded.nutrientTypes">
+                                <a href="#bf3{{ rb.name }}" data-toggle="tab">{{ rb.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="rb in riboflavin_b2._embedded.nutrientTypes" class="tab-pane" id="bf3{{ rb.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="rb.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NIACIIN TAB -->
+            <div class="tab-pane" id="bg3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="n in niaciin._embedded.nutrientTypes">
+                                <a href="#bg3{{ n.name }}" data-toggle="tab">{{ n.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="n in niaciin._embedded.nutrientTypes" class="tab-pane" id="bg3{{ n.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="n.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOLATE TAB -->
+            <div class="tab-pane" id="bh3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="f in folate._embedded.nutrientTypes">
+                                <a href="#bh3{{ f.name }}" data-toggle="tab">{{ f.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="f in folate._embedded.nutrientTypes" class="tab-pane" id="bh3{{ f.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="f.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PANTHOTENIC_ACID TAB -->
+            <div class="tab-pane" id="bi3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="pa in panthotenic_acid._embedded.nutrientTypes">
+                                <a href="#bi3{{ pa.name }}" data-toggle="tab">{{ pa.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="pa in panthotenic_acid._embedded.nutrientTypes" class="tab-pane" id="bi3{{ pa.name }} on-finish-render="ngRepeatFinished"">
+                                <nutrient-item nutrient="food" key="pa.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_B6 TAB -->
+            <div class="tab-pane" id="bj3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="vb6 in vitamin_b6._embedded.nutrientTypes">
+                                <a href="#bj3{{ vb6.name }}" data-toggle="tab">{{ vb6.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="vb6 in vitamin_b6._embedded.nutrientTypes" class="tab-pane" id="bj3{{ vb6.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="vb6.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_B12 TAB -->
+            <div class="tab-pane" id="bk3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="vb12 in vitamin_b12._embedded.nutrientTypes">
+                                <a href="#bk3{{ vb12.name }}" data-toggle="tab">{{ vb12.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="vb12 in vitamin_b12._embedded.nutrientTypes" class="tab-pane" id="bk3{{ vb12.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="vb12.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BIOTIN TAB -->
+            <div class="tab-pane" id="bl3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="bt in biotin._embedded.nutrientTypes">
+                                <a href="#bl3{{ bt.name }}" data-toggle="tab">{{ bt.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="bt in biotin._embedded.nutrientTypes" class="tab-pane" id="bl3{{ bt.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="bt.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- VITAMIN_C TAB -->
+            <div class="tab-pane" id="bm3">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="vc in vitamin_c._embedded.nutrientTypes">
+                                <a href="#bm3{{ vc.name }}" data-toggle="tab">{{ vc.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="vc in vitamin_c._embedded.nutrientTypes" class="tab-pane" id="bm3{{ vc.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="vc.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

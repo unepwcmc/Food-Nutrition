@@ -1,0 +1,53 @@
+<div class="row">
+    <div ui-tab class="col-md-4">
+        <ul class="nav nav-tabs tabs-left">
+            <li><a href="#ca4" data-toggle="tab">{{'CHOLESTEROL' | translate}}</a></li>
+            <li><a href="#cb4" data-toggle="tab">{{'PLANT_STEROLS' | translate}}</a></li>
+        </ul>
+    </div>
+    <div class="col-md-8">
+        <div class="tab-content">
+
+            <!-- CHOLESTEROL TAB -->
+            <div class="tab-pane" id="ca4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="ch in cholesterol._embedded.nutrientTypes">
+                                <a href="#ca4{{ ch.name }}" data-toggle="tab">{{ ch.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="ch in cholesterol._embedded.nutrientTypes" class="tab-pane" id="ca4{{ ch.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="ch.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLANT_STEROLS TAB -->
+            <div class="tab-pane" id="cb4">
+                <div class="row">
+                    <div class="col-xs-4 ui-tab">
+                        <ul class="nav nav-tabs tabs-left">
+                            <li ng-repeat="ps in plant_sterols._embedded.nutrientTypes">
+                                <a href="#cb4{{ ps.name }}" data-toggle="tab">{{ ps.name | translate}}&nbsp;(g)</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="tab-content">
+                            <div ng-repeat="ps in plant_sterols._embedded.nutrientTypes" class="tab-pane" id="cb4{{ ps.name }}" on-finish-render="ngRepeatFinished">
+                                <nutrient-item nutrient="food" key="ps.name"></nutrient-item>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

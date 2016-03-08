@@ -12,10 +12,17 @@ define(['angularAMD', 'bootstrap'], function (angularAMD) {
                     e.preventDefault();
                     $(this).tab('show');
 
-                    //console.log("Here: ", element);
-
                     var textAreas = $('.tab-content').find('textarea');
                     textAreas.trigger('click');
+                });
+
+                scope.$on('ngRepeatFinished', function() {
+                    $(document).ready(function() {
+                        $('.ui-tab').find('a').click(function (e) {
+                            e.preventDefault();
+                            $(this).tab('show');
+                        });
+                    });
                 });
             }
         };

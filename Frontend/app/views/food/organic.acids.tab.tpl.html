@@ -1,0 +1,17 @@
+<div class="row">
+    <!-- ORGANIC_ACIDS TAB -->
+    <div class="col-xs-4 ui-tab">
+        <ul class="nav nav-tabs tabs-left">
+            <li ng-repeat="oa in organic_acids._embedded.nutrientTypes">
+                <a href="#b4{{ oa.name }}" data-toggle="tab">{{ oa.name | translate}}&nbsp;(g)</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-8">
+        <div class="tab-content">
+            <div ng-repeat="oa in organic_acids._embedded.nutrientTypes" class="tab-pane" id="b4{{ oa.name }}" on-finish-render="ngRepeatFinished">
+                <nutrient-item nutrient="food" key="oa.name"></nutrient-item>
+            </div>
+        </div>
+    </div>
+</div>
