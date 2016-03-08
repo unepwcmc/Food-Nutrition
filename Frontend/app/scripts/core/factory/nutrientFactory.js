@@ -31,25 +31,6 @@ define(['angularAMD'], function (angularAMD) {
             setData: function (data) {
                 angular.extend(this, data);
             },
-            get: function( id){
-
-                var self = this;
-
-                $http.get( $rootScope.getHost() + "foods/" + id )
-
-                    .success(function (data) {
-                        if (data.message == 'no matches found') {
-                            $rootScope.$broadcast("FOOD_LOAD_ERROR");
-                        } else {
-                            self.setData(data);
-                            $rootScope.$broadcast("FOOD_LOADED");
-                        }
-                    })
-                    .error(function (message) {
-                        $log.error(message);
-                        $rootScope.$broadcast("FOOD_LOAD_ERROR");
-                    });
-            },
             filterByType: function( type, callback ){
 
                 var self = this;
