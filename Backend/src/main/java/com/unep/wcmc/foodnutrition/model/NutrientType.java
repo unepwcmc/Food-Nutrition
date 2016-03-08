@@ -1,5 +1,6 @@
 package com.unep.wcmc.foodnutrition.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.unep.wcmc.foodnutrition.repository.NutrientTypeProjection;
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
@@ -21,7 +22,8 @@ public class NutrientType implements BaseEntity, NutrientTypeProjection {
     @JoinColumn(name = "parent_id")
     private NutrientType parent;
 
-    @OneToMany(mappedBy = "parent")
+    @OneToMany(mappedBy = "parent", fetch = FetchType.EAGER)
+    @JsonIgnore
     private Set<NutrientType> children;
 
     public Long getId() {
