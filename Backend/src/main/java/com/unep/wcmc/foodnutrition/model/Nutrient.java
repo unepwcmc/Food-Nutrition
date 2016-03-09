@@ -10,6 +10,7 @@ public class Nutrient implements BaseEntity, NutrientConstants {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Enumerated(EnumType.STRING)
     private MeasureUnit unit;
 
     private Float value;
