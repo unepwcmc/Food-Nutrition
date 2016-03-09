@@ -24,8 +24,8 @@ sudo chmod +x ./gradlew
 sudo ./gradlew build -x test
 sudo service food-nutrition start
 
-echo "Starting the frontend..."
-cd ../Frontend
-sudo grunt setup
-sudo grunt deploy --force
-sudo service nginx start
+#echo "Starting the frontend..."
+#cd ../Frontend
+#sudo grunt setup
+#sudo grunt deploy --force
+#sudo service nginx start
