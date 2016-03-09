@@ -7,15 +7,19 @@ define(['app',
     'food/directives/energy.macronutrients.directive',
     'food/directives/micronutrients.directive',
     'food/directives/other.components.directive',
-    'core/factory/foodFactory'], function () {
+    'core/factory/foodFactory',
+    'core/factory/FoodGroupFactory',
+    'core/factory/FoodTypeFactory'], function () {
 
     'use strict';
 
-    return ['$scope','$rootScope','BaseController','Food','$stateParams', function ($scope, $rootScope, BaseController, Food, $stateParams) {
+    return ['$scope','$rootScope','BaseController','Food','FoodGroup','FoodType','$stateParams', function ($scope, $rootScope, BaseController, Food, FoodGroup,FoodType, $stateParams) {
 
             angular.extend($scope, BaseController);
 
 
+             $scope.foodGroup = new FoodGroup();
+             $scope.foodType = new FoodType();
              $scope.food = new Food();
 
             $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
@@ -28,6 +32,8 @@ define(['app',
             $scope.$on('$viewContentLoaded', function() {
                 console.log('view Content Loaded...');
 
+                $scope.foodGroup.list();
+                $scope.foodType.list();
                 $scope.food.get( $stateParams.id );
             });
 
