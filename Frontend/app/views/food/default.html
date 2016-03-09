@@ -1,5 +1,5 @@
 <!-- MAIN -->
-<section class="l-main general">
+<section class="l-main general" edit-form="{{editMode}}">
 
     <!-- Loading screen -->
     <div id="loader-wrapper" class="loading">
@@ -65,13 +65,9 @@
                     <h3>Green-Apple Guava, peel, dry, raw, organic, rhoncus erat quis
 
 
-                        <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT'
-                            | translate}}</strong></a>
-                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-white save-form"><strong>{{'SAVE_CHANGES'
-                            | translate}}</strong></a>
-                        <a ng-show="editMode"
-                           class="btn btn-small btn-primary pull-right btn-transparent save-form cancel"><strong>{{'CANCEL'
-                            | translate}}</strong></a>
+                        <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT'| translate}}</strong></a>
+                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-white save-form"><strong>{{'SAVE' | translate}}</strong></a>
+                        <a ng-show="editMode" class="btn btn-small btn-primary pull-right btn-transparent save-form cancel"><strong>{{'CANCEL'| translate}}</strong></a>
 
                     </h3>
                 </div>

@@ -31,13 +31,14 @@ define(['angularAMD'], function (angularAMD) {
             setData: function (data) {
                 angular.extend(this, data);
             },
+
             get: function( id){
 
                 var self = this;
 
                 $http.get( $rootScope.getHost() + "foods/" + id )
 
-                    .success(function (data) {
+                    .success(function ( data, status, headers, config ) {
                         if (data.message == 'no matches found') {
                             $rootScope.$broadcast("FOOD_LOAD_ERROR");
                         } else {
@@ -48,6 +49,24 @@ define(['angularAMD'], function (angularAMD) {
                     .error(function (message) {
                         $log.error(message);
                         $rootScope.$broadcast("FOOD_LOAD_ERROR");
+                    });
+            },
+            update: function ( callback ) {
+
+                $http.put( $rootScope.getHost() + "foods/" + this.id, this)
+                    .success(function ( data, status, headers, config ) {
+
+                        if(callback)
+                            callback( data, status, headers, config);
+
+                        $rootScope.$broadcast("FOOD_UPDATED");
+                    })
+                    .error(function ( data, status, headers, config ) {
+
+                        if(callback)
+                            callback( data, status, headers, config);
+
+                        $log.error(data.message);
                     });
             }
         };

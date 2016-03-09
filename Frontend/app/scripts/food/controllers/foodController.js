@@ -15,6 +15,7 @@ define(['app',
 
             angular.extend($scope, BaseController);
 
+
              $scope.food = new Food();
 
             $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
@@ -31,9 +32,20 @@ define(['app',
             });
 
             $scope.$on('FOOD_LOADED', function() {
-                    $('#loader-wrapper').fadeToggle('400');
-
+                console.log('food loaded');
                 console.log($scope.food);
+
+                $('#loader-wrapper').fadeToggle('400');
+            });
+
+            $scope.$on('ACTION_SAVE', function(){
+                $('#loader-wrapper').fadeToggle('400');
+
+                 $scope.food.update();
+            });
+
+            $scope.$on('FOOD_UPDATED', function() {
+                $('#loader-wrapper').fadeToggle('400');
             });
 
         }];

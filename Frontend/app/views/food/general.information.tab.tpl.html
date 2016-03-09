@@ -8,7 +8,7 @@
         <hr/>
         <div class="row">
             <div class="col-md-5">
-                <form action="#" class="form-block view-mode" role="form">
+                <form action="#" class="form-block form-data view-mode" role="form" novalidate>
                     <div class="small-field">
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'FOOD_GROUP' | translate }} *</label>
@@ -40,7 +40,7 @@
                                     <div class="triangle"></div>
                                     <div class="side-line"></div>
                                 </div>
-                            <textarea type="text" class="form-control">{{ food.notes }}</textarea>
+                            <textarea type="text" class="form-control" data-ng-model="food.notes"></textarea>
                             <hr/>
                         </div>
                     </div>

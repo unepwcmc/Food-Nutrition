@@ -12,6 +12,7 @@ define(['angularAMD', 'jquery'], function (angularAMD) {
             restrict: 'A',
             controller: ['$scope', '$rootScope', function($scope, $rootScope){
 
+                $rootScope.editMode = false;
                 $scope.logged = $rootScope.logged;
 
                 $rootScope.$watch('logged', function(newValue, oldValue){
@@ -67,7 +68,6 @@ define(['angularAMD', 'jquery'], function (angularAMD) {
                         $form.find('select').removeAttr('disabled');
                         $form.find('input[type="number"]').removeAttr('disabled');
                         $form.find('input[type="radio"]').removeAttr('disabled');
-                        $(element).find('.rem-row').removeAttr('disabled');
                     }
 
                     isEditing(true, element);
@@ -116,6 +116,7 @@ define(['angularAMD', 'jquery'], function (angularAMD) {
                  * @param param: boolean
                  */
                 function isEditing(param, element) {
+                    $rootScope.editMode = param;
                     scope.isEditing = param;
 
                     var textAreas = $(element).find('textarea');

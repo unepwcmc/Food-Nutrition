@@ -56,7 +56,7 @@ define(['angularAMD'], function (angularAMD) {
 
                 $http.get( $rootScope.getHost() + "nutrient-types/search/nutrients?parent=" + type )
 
-                    .success(function ( data, status, headers, config) {
+                    .success(function ( data, status, headers, config ) {
                         if (data.message == 'no matches found') {
                             $rootScope.$broadcast("NUTRIENT_TYPE_LOAD_ERROR");
                         } else {
