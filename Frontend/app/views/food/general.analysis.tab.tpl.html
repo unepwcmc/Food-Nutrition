@@ -19,12 +19,12 @@
             </div>
             <div class="col-xs-9">
                 <div class="tab-content">
-                    <div class="tab-pane active" id="a1"><general-analysis-item analysis="food" key="density" edit-form></general-analysis-item></div>
-                    <div class="tab-pane" id="b1"><general-analysis-item analysis="food" key="ediblePortion" edit-form></general-analysis-item></div>
-                    <div class="tab-pane" id="c1"><general-analysis-item analysis="food" key="pH" edit-form></general-analysis-item></div>
-                    <div class="tab-pane" id="d1"><general-analysis-item analysis="food" key="solidSoluble" edit-form></general-analysis-item></div>
-                    <div class="tab-pane" id="e1"><general-analysis-item analysis="food" key="foodSize" edit-form></general-analysis-item></div>
-                    <div class="tab-pane" id="f1"><general-analysis-item analysis="food" key="foodWeight" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.density != null" class="tab-pane active" id="a1"><general-analysis-item analysis="food" key="density" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.ediblePortion != null" class="tab-pane" id="b1"><general-analysis-item analysis="food" key="ediblePortion" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.pH != null" class="tab-pane" id="c1"><general-analysis-item analysis="food" key="pH" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.solidSoluble != null" class="tab-pane" id="d1"><general-analysis-item analysis="food" key="solidSoluble" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.foodSize != null" class="tab-pane" id="e1"><general-analysis-item analysis="food" key="foodSize" edit-form></general-analysis-item></div>
+                    <div ng-show="food.generalAnalysis.foodWeight != null" class="tab-pane" id="f1"><general-analysis-item analysis="food" key="foodWeight" edit-form></general-analysis-item></div>
                 </div>
             </div>
         </div>
