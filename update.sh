@@ -28,4 +28,4 @@ sudo service food-nutrition start
 #cd ../Frontend
 #sudo grunt setup
 #sudo grunt deploy --force
-#sudo service nginx start
+sudo service nginx start
