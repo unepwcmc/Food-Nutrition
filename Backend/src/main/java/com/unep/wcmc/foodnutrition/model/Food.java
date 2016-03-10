@@ -1,5 +1,6 @@
 package com.unep.wcmc.foodnutrition.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
 import javax.persistence.*;
@@ -13,6 +14,8 @@ public class Food implements BaseEntity {
     private Long id;
 
     private String name;
+
+    private String description;
 
     @ManyToOne
     @JoinColumn(name = "food_type_id")
@@ -98,7 +101,7 @@ public class Food implements BaseEntity {
     @JoinColumn(name = "general_analysis_id")
     private GeneralAnalysis generalAnalysis;
 
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "food_id")
     @MapKeyJoinColumn(name = "nutrient_type_id")
     private Map<NutrientType, Nutrient> nutrients;
@@ -119,6 +122,14 @@ public class Food implements BaseEntity {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getScientificName() {

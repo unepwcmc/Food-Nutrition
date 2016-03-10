@@ -10,14 +10,12 @@
     <div class="page-header">
         <div class="container">
 
-            <br/>
-            <ol style="display: none;" class="breadcrumb">
+            <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Administration</a></li>
-                <li class="active">New Record_Green Guava, pray, dry, organic: General Information</li>
+                <li class="active">{{ food.name }}</li>
             </ol>
 
-            <hr style="display: none;"/>
+            <hr/>
 
             <div style="display: none;" class="row associate_form">
                 <form class="form-inline">
@@ -62,7 +60,7 @@
                     </h3>
                 </div>
                 <div class="col-md-12">
-                    <h3>Green-Apple Guava, peel, dry, raw, organic, rhoncus erat quis
+                    <h3>{{food.description}}
 
 
                         <a ng-show="!editMode && logged" class="btn btn-small btn-primary pull-right edit-form"><strong>{{'EDIT'| translate}}</strong></a>

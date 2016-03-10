@@ -1,12 +1,14 @@
 package com.unep.wcmc.foodnutrition.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.unep.wcmc.foodnutrition.repository.NutrientTypeProjection;
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-public class NutrientType implements BaseEntity {
+public class NutrientType implements BaseEntity, NutrientTypeProjection {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,6 +23,7 @@ public class NutrientType implements BaseEntity {
     private NutrientType parent;
 
     @OneToMany(mappedBy = "parent", fetch = FetchType.EAGER)
+    @JsonIgnore
     private Set<NutrientType> children;
 
     public Long getId() {

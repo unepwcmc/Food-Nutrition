@@ -15,8 +15,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="fl in flavonoids._embedded.nutrientTypes">
-                                <a href="#aa4{{ fl.name }}" data-toggle="tab">{{ fl.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[fl.name] != null" ng-repeat="fl in flavonoids._embedded.nutrientTypes">
+                                <a href="#aa4{{ fl.name }}" data-toggle="tab">{{ fl.name | translate}}&nbsp;({{fl.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
@@ -35,8 +35,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="ta in tannins._embedded.nutrientTypes">
-                                <a href="#ab4{{ ta.name }}" data-toggle="tab">{{ ta.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[ta.name] != null" ng-repeat="ta in tannins._embedded.nutrientTypes">
+                                <a href="#ab4{{ ta.name }}" data-toggle="tab">{{ ta.name | translate}}&nbsp;({{ta.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
@@ -55,8 +55,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="pa in phenolic_acids._embedded.nutrientTypes">
-                                <a href="#ac4{{ pa.name }}" data-toggle="tab">{{ pa.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[pa.name] != null" ng-repeat="pa in phenolic_acids._embedded.nutrientTypes">
+                                <a href="#ac4{{ pa.name }}" data-toggle="tab">{{ pa.name | translate}}&nbsp;({{pa.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
@@ -75,8 +75,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="other in bioactive_others._embedded.nutrientTypes">
-                                <a href="#ad4{{ other.name }}" data-toggle="tab">{{ other.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[other.name] != null" ng-repeat="other in bioactive_others._embedded.nutrientTypes">
+                                <a href="#ad4{{ other.name }}" data-toggle="tab">{{ other.name | translate}}&nbsp;({{other.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>

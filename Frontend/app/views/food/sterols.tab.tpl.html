@@ -13,8 +13,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="ch in cholesterol._embedded.nutrientTypes">
-                                <a href="#ca4{{ ch.name }}" data-toggle="tab">{{ ch.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[ch.name] != null" ng-repeat="ch in cholesterol._embedded.nutrientTypes">
+                                <a href="#ca4{{ ch.name }}" data-toggle="tab">{{ ch.name | translate}}&nbsp;({{ch.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
@@ -33,8 +33,8 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="ps in plant_sterols._embedded.nutrientTypes">
-                                <a href="#cb4{{ ps.name }}" data-toggle="tab">{{ ps.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[ps.name] != null" ng-repeat="ps in plant_sterols._embedded.nutrientTypes">
+                                <a href="#cb4{{ ps.name }}" data-toggle="tab">{{ ps.name | translate}}&nbsp;({{ps.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>

@@ -63,7 +63,7 @@ public class TokenProvider {
         authTokenCache.put(new Element(token, authentication, getTimeToIdle(), getTimeToLive()));
         response.addHeader(AUTH_HEADER_NAME, token);
         TokenResponse tokenResponse = new TokenResponse(token, user);
-        String tokenJsonResponse = new MvcConfig.HibernateAwareObjectMapper().writeValueAsString(tokenResponse);
+        String tokenJsonResponse = new MvcConfig().new HibernateAwareObjectMapper().writeValueAsString(tokenResponse);
         response.addHeader("Content-Type", "application/json");
         response.getWriter().print(tokenJsonResponse);
         return token;

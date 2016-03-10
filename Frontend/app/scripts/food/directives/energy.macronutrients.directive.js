@@ -1,6 +1,5 @@
 define(['angularAMD',
         'core/factory/nutrientFactory',
-        'food/directives/energy.macronutrients.item.directive',
         'food/directives/nutrient.item.directive'], function (angularAMD) {
 
     'use strict';
@@ -14,13 +13,59 @@ define(['angularAMD',
 
                 controller: ['$scope','$rootScope',function( $scope, $rootScope ) {
 
-                         $scope.carbohydrates_polyols= [];
-                         $scope.carbohydrates_fibre = [];
-                         $scope.carbohydrates_poly = [];
-                         $scope.carbohydrates_polyols= [];
-                         $scope.carbohydrates = [];
+                        var nutrient = new Nutrient();
 
-                         var nutrient = new Nutrient();
+                        // Protein
+                        $scope.protein = [];
+                        $scope.amino_acids = [];
+                        $scope.nitrogen = [];
+
+                        nutrient.filterByType('PROTEIN_TOTAL', function( data, status){
+                            $scope.protein = data;
+                        });
+
+                        nutrient.filterByType('AMINO_ACIDS', function( data, status){
+                            $scope.amino_acids = data;
+                        });
+
+                        nutrient.filterByType('NITROGEN', function( data, status){
+                            $scope.nitrogen = data;
+                        });
+
+                        // Lipids
+                        $scope.fatty_acids = [];
+                        $scope.saturated = [];
+                        $scope.monosaturated = [];
+                        $scope.polyunsaturated = [];
+                        $scope.fat_components = [];
+
+                        nutrient.filterByType('FATTY_ACIDS_TOTAL', function( data, status){
+                            $scope.fatty_acids = data;
+                        });
+
+                        nutrient.filterByType('FATTY_ACIDS_SATURATED', function( data, status){
+                            $scope.saturated = data;
+                        });
+
+                        nutrient.filterByType('FATTY_ACIDS_MONOUNSATURATED', function( data, status){
+                            $scope.monosaturated = data;
+                        });
+
+                        nutrient.filterByType('FATTY_ACIDS_POLYUNSATURATED', function( data, status){
+                            $scope.polyunsaturated = data;
+                        });
+
+                        nutrient.filterByType('FAT_COMPONENTS', function( data, status){
+                            $scope.fat_components = data;
+                        });
+
+
+                        // Carbohydrates
+                        $scope.carbohydrates_polyols= [];
+                        $scope.carbohydrates_fibre = [];
+                        $scope.carbohydrates_poly = [];
+                        $scope.carbohydrates_polyols= [];
+                        $scope.carbohydrates = [];
 
                         nutrient.filterByType('FIBRE', function( data, status){
                             $scope.carbohydrates_fibre = data;

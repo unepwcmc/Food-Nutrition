@@ -8,7 +8,7 @@ define(['angularAMD'], function (angularAMD) {
 
                 restrict: 'EA',
                 templateUrl: 'views/food/nutrient.item.tpl.html',
-                scope:{ nutrient: "=", key:'@' },
+                scope:{ nutrient: "=", key:'=' },
                 controller: ['$scope','$timeout', function( $scope, $timeout ) {
                 }],
                 link: function (scope, element, attrs) {

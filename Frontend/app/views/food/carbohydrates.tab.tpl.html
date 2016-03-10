@@ -16,15 +16,15 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="carbohydrate in carbohydrates._embedded.nutrientTypes">
-                                <a href="#h21{{ carbohydrate.name }}" data-toggle="tab">{{ carbohydrate.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[carbohydrate.name] != null" ng-repeat="carbohydrate in carbohydrates._embedded.nutrientTypes">
+                                <a href="#h21{{ carbohydrate.name }}" data-toggle="tab">{{ carbohydrate.name | translate}}&nbsp;({{carbohydrate.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
                             <div ng-repeat="carbohydrate in carbohydrates._embedded.nutrientTypes" class="tab-pane" id="h21{{ carbohydrate.name }}" on-finish-render="ngRepeatFinished">
-                                <energy-macronutrients-item nutrient="food" key="carbohydrate.name"></energy-macronutrients-item>
+                                <nutrient-item nutrient="food" key="carbohydrate.name"></nutrient-item>
                             </div>
                         </div>
                     </div>
@@ -36,15 +36,15 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="fibre in carbohydrates_fibre._embedded.nutrientTypes">
-                                <a href="#h22{{ fibre.name }}" data-toggle="tab">{{ fibre.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[fibre.name] != null" ng-repeat="fibre in carbohydrates_fibre._embedded.nutrientTypes">
+                                <a href="#h22{{ fibre.name }}" data-toggle="tab">{{ fibre.name | translate}}&nbsp;({{fibre.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
                             <div ng-repeat="fibre in carbohydrates_fibre._embedded.nutrientTypes" class="tab-pane" id="h22{{ fibre.name }}" on-finish-render="ngRepeatFinished">
-                                <energy-macronutrients-item nutrient="food" key="fibre.name"></energy-macronutrients-item>
+                                <nutrient-item nutrient="food" key="fibre.name"></nutrient-item>
                             </div>
                         </div>
                     </div>
@@ -56,15 +56,15 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="sugar in carbohydrates_sugars._embedded.nutrientTypes">
-                                <a href="#h23{{ sugar.name }}" data-toggle="tab">{{ sugar.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[sugar.name] != null" ng-repeat="sugar in carbohydrates_sugars._embedded.nutrientTypes">
+                                <a href="#h23{{ sugar.name }}" data-toggle="tab">{{ sugar.name | translate}}&nbsp;({{sugar.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
                             <div ng-repeat="sugar in carbohydrates_sugars._embedded.nutrientTypes" class="tab-pane" id="h23{{ sugar.name }}" on-finish-render="ngRepeatFinished">
-                                <energy-macronutrients-item nutrient="food" key="sugar.name"></energy-macronutrients-item>
+                                <nutrient-item nutrient="food" key="sugar.name"></nutrient-item>
                             </div>
                         </div>
                     </div>
@@ -76,15 +76,15 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="poly in carbohydrates_poly._embedded.nutrientTypes">
-                                <a href="#h24{{ poly.name }}" data-toggle="tab">{{ poly.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[poly.name] != null" ng-repeat="poly in carbohydrates_poly._embedded.nutrientTypes">
+                                <a href="#h24{{ poly.name }}" data-toggle="tab">{{ poly.name | translate}}&nbsp;({{poly.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
                             <div ng-repeat="poly in carbohydrates_poly._embedded.nutrientTypes" class="tab-pane" id="h24{{ poly.name }}" on-finish-render="ngRepeatFinished">
-                                <energy-macronutrients-item nutrient="food" key="poly.name"></energy-macronutrients-item>
+                                <nutrient-item nutrient="food" key="poly.name"></nutrient-item>
                             </div>
                         </div>
                     </div>
@@ -96,15 +96,15 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-repeat="polyols in carbohydrates_polyols._embedded.nutrientTypes">
-                                <a href="#h25{{ polyols.name }}" data-toggle="tab">{{ polyols.name | translate}}&nbsp;(g)</a>
+                            <li ng-show="food.nutrients[polyols.name] != null" ng-repeat="polyols in carbohydrates_polyols._embedded.nutrientTypes">
+                                <a href="#h25{{ polyols.name }}" data-toggle="tab">{{ polyols.name | translate}}&nbsp;({{polyols.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
                             <div ng-repeat="polyols in carbohydrates_polyols._embedded.nutrientTypes" class="tab-pane" id="h25{{ polyols.name }}" on-finish-render="ngRepeatFinished">
-                                <energy-macronutrients-item nutrient="food" key="polyols.name"></energy-macronutrients-item>
+                                <nutrient-item nutrient="food" key="polyols.name"></nutrient-item>
                             </div>
                         </div>
                     </div>
