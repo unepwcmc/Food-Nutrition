@@ -28,7 +28,9 @@ public class Food implements BaseEntity {
 
     private String scientificName;
 
-    private String taxonRank;
+    @ManyToOne
+    @JoinColumn(name = "food_taxon_rank_id")
+    private TaxonRank taxonRank;
 
     private String notes;
 
@@ -127,11 +129,11 @@ public class Food implements BaseEntity {
         this.scientificName = scientificName;
     }
 
-    public String getTaxonRank() {
+    public TaxonRank getTaxonRank() {
         return taxonRank;
     }
 
-    public void setTaxonRank(String taxonRank) {
+    public void setTaxonRank(TaxonRank taxonRank) {
         this.taxonRank = taxonRank;
     }
 
