@@ -9,11 +9,12 @@ define(['app',
     'food/directives/other.components.directive',
     'core/factory/foodFactory',
     'core/factory/FoodGroupFactory',
-    'core/factory/FoodTypeFactory'], function () {
+    'core/factory/FoodTypeFactory',
+    'core/factory/taxonRankFactory'], function () {
 
     'use strict';
 
-    return ['$scope','$rootScope','BaseController','Food','FoodGroup','FoodType','$stateParams', function ($scope, $rootScope, BaseController, Food, FoodGroup,FoodType, $stateParams) {
+    return ['$scope','$rootScope','BaseController','Food','FoodGroup','FoodType','TaxonRank','$stateParams', function ($scope, $rootScope, BaseController, Food, FoodGroup,FoodType,TaxonRank, $stateParams) {
 
             angular.extend($scope, BaseController);
 
@@ -21,6 +22,7 @@ define(['app',
              $scope.foodGroup = new FoodGroup();
              $scope.foodType = new FoodType();
              $scope.food = new Food();
+             $scope.taxonRank = new TaxonRank();
 
             $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
                 console.log('state Change Success');
@@ -34,6 +36,7 @@ define(['app',
 
                 $scope.foodGroup.list();
                 $scope.foodType.list();
+                $scope.taxonRank.list();
                 $scope.food.get( $stateParams.id );
             });
 

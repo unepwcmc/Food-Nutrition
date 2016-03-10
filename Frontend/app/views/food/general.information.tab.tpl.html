@@ -13,8 +13,8 @@
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'FOOD_GROUP' | translate }} *</label>
                             <div class="col-sm-8">
-                                <select select-wrap class="form-control" data-ng-model="food.foodGroup">
-                                    <option ng-repeat="fg in foodGroup._embedded.foodGroups" value="{{ fg.name }}" selected>{{ fg.name | translate }}</option>
+                                <select select-wrap class="form-control" data-ng-model="food.foodGroup.id">
+                                    <option ng-repeat="fg in foodGroup._embedded.foodGroups" value="{{ fg.id }}">{{ fg.name | translate }}</option>
                                 </select>
                             </div>
                         </div>
@@ -22,15 +22,19 @@
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'FOOD_TYPE' | translate }} *</label>
                             <div class="col-sm-7">
-                                <select select-wrap class="form-control" data-ng-model="food.foodType">
-                                    <option ng-repeat="ft in foodType._embedded.foodTypes" value="{{ ft.name }}" selected>{{ ft.name | translate }}</option>
+                                <select select-wrap class="form-control" data-ng-model="food.foodType.id">
+                                    <option ng-repeat="ft in foodType._embedded.foodTypes" value="{{ ft.id }}">{{ ft.name | translate }}</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-5" style="text-align: right;">{{ 'TAXON_RANK' | translate }}</label>
-                            <div class="col-sm-7"><input type="text" class="form-control" data-ng-model="food.taxonRank"></div>
+                            <div class="col-sm-7">
+                                <select select-wrap class="form-control" data-ng-model="food.taxonRank.id">
+                                    <option ng-repeat="tr in taxonRank._embedded.taxonRanks" value="{{ tr.id }}">{{ tr.name | translate }}</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div class="form-group">
