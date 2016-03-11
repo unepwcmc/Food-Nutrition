@@ -83,7 +83,7 @@ public class Food implements BaseEntity {
 
     private String recipeProcedure;
 
-    private String shapeForm;
+    private ShapeForm shapeForm;
 
     @ManyToOne
     @JoinColumn(name = "colour_id")
@@ -260,11 +260,11 @@ public class Food implements BaseEntity {
         this.recipeProcedure = recipeProcedure;
     }
 
-    public String getShapeForm() {
+    public ShapeForm getShapeForm() {
         return shapeForm;
     }
 
-    public void setShapeForm(String shapeForm) {
+    public void setShapeForm(ShapeForm shapeForm) {
         this.shapeForm = shapeForm;
     }
 
