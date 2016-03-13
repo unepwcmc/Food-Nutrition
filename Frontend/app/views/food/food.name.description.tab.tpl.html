@@ -61,7 +61,9 @@
                             <label class="col-sm-3 control-label">{{ 'PART_OF_PLANT_ANIMAL' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="{{food.partPlantAnimal.name | translate}}">
+                                <select select-wrap class="form-control" data-ng-model="food.partPlantAnimal.id">
+                                    <option ng-repeat="ppa in partPlantAnimal._embedded.partPlantAnimals" value="{{ ppa.id }}">{{ ppa.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
@@ -75,35 +77,45 @@
                             <label class="col-sm-3 control-label">{{ 'FOOD_PROCESSING' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control"  value="{{food.processing.name | translate}} ">
+                                <select select-wrap class="form-control" data-ng-model="food.processing.id">
+                                    <option ng-repeat="fp in foodProcessing._embedded.foodProcessings" value="{{ fp.id }}">{{ fp.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">{{ 'PRESERVATION_METHOD' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="{{food.preservationMethod.name | translate}}">
+                                <select select-wrap class="form-control" data-ng-model="food.preservationMethod.id">
+                                    <option ng-repeat="pm in preservationMethod._embedded.preservationMethods" value="{{ pm.id }}">{{ pm.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">{{ 'DEGREE_OF_COOKING' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="{{food.cookingDegree.name | translate}}">
+                                <select select-wrap class="form-control" data-ng-model="food.cookingDegree.id">
+                                    <option ng-repeat="cd in cookingDegree._embedded.cookingDegrees" value="{{ cd.id }}">{{ cd.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">{{ 'AGRICULTURAL_PRODUCTION_CONDICTION' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control"  value="{{food.agriculturalCondition.name | translate}}">
+                                <select select-wrap class="form-control" data-ng-model="food.agriculturalCondition.id">
+                                    <option ng-repeat="ac in agriculturalConditions._embedded.agriculturalProductionConditions" value="{{ ac.id }}">{{ ac.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">{{ 'MATURITY_OR_RIPENESS' | translate}}</label>
 
                             <div class="col-sm-10 col-value">
-                                <input type="text" class="form-control" value="{{food.ripenessMaturity.name | translate}}">
+                                <select select-wrap class="form-control" data-ng-model="food.ripenessMaturity.id">
+                                    <option ng-repeat="rm in ripenessMaturity._embedded.ripenessMaturities" value="{{ rm.id }}">{{ rm.name | translate }}</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group">
