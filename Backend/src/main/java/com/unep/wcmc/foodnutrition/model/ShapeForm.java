@@ -2,10 +2,12 @@ package com.unep.wcmc.foodnutrition.model;
 
 import com.unep.wcmc.foodnutrition.support.BaseEntity;
 
+import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
 public class ShapeForm implements BaseEntity {
 
     @Id
