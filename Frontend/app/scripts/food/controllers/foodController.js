@@ -8,8 +8,8 @@ define(['app',
     'food/directives/micronutrients.directive',
     'food/directives/other.components.directive',
     'core/factory/foodFactory',
-    'core/factory/FoodGroupFactory',
-    'core/factory/FoodTypeFactory',
+    'core/factory/foodGroupFactory',
+    'core/factory/foodTypeFactory',
     'core/factory/taxonRankFactory'], function () {
 
     'use strict';
