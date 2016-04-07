@@ -2,14 +2,14 @@
     <!-- ORGANIC_ACIDS TAB -->
     <div class="col-xs-4 ui-tab">
         <ul class="nav nav-tabs tabs-left">
-            <li ng-show="food.nutrients[oa.name] != null" ng-repeat="oa in organic_acids._embedded.nutrientTypes">
+            <li ng-show="editMode || food.nutrients[oa.name] != null" ng-repeat="oa in organic_acids._embedded.nutrientTypes">
                 <a href="#b4{{ oa.name }}" data-toggle="tab">{{ oa.name | translate}}&nbsp;({{oa.unit | translate}})</a>
             </li>
         </ul>
     </div>
     <div class="col-xs-8">
         <div class="tab-content">
-            <div ng-repeat="oa in organic_acids._embedded.nutrientTypes" class="tab-pane" id="b4{{ oa.name }}" on-finish-render="ngRepeatFinished">
+            <div ng-show="editMode || food.nutrients[oa.name] != null" ng-repeat="oa in organic_acids._embedded.nutrientTypes" class="tab-pane" id="b4{{ oa.name }}" on-finish-render="ngRepeatFinished">
                 <nutrient-item nutrient="food" key="oa.name"></nutrient-item>
             </div>
         </div>

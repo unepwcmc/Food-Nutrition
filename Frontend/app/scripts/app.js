@@ -162,35 +162,51 @@ define(['include', 'language'], function (angularAMD, language) {
              */
             $rootScope.login = function(user, callback) {
 
-                $http.post( $rootScope.getHost() + "login", user )
-                    .success(function (data, status, headers, config) {
 
-                        $cookies.put('user', data.user.username);
-                        $cookies.put('userId', data.user.id);
-                        $cookies.put('userRole', data.user.userRole.role);
-                        $cookies.put('tokenSecret', data.token);
-                        $cookies.put('fullName', data.user.firstName + ' ' + data.user.lastName);
+                $cookies.put('user', user.username);
+                $cookies.put('userId', 1);
+                $cookies.put('userRole', 'ADMIN');
+                $cookies.put('tokenSecret', "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTQ1OTk3OTY4OX0." +
+                    "utupV5DSpTXw13EfBcuQin8UxcVzQSOfkUbdibH1A9velMdVNT-weY6dKO0I2gCyhbJ8RzfPIbAkG30W1MDGaw");
+                $cookies.put('fullName', user.username);
 
-                        $http.defaults.headers.common['X-AUTH-TOKEN'] = data.token;
+                $rootScope.userRole = 'ADMIN';
+                $rootScope.userId = 1;
+                $rootScope.username = user.username;
+                $rootScope.fullName = user.username;
+                $rootScope.logged = true;
 
-                        $rootScope.userRole = data.user.userRole.role;
-                        $rootScope.userId = data.user.id;
-                        $rootScope.username = data.user.username;
-                        $rootScope.fullName = data.user.firstName + ' ' + data.user.lastName;
-                        $rootScope.logged = true;
+                $rootScope.$broadcast("AuthenticationDone", user);
 
-                        if (callback) {
-                            callback(data, status, headers, config);
-                        }
-
-                        $rootScope.$broadcast("AuthenticationDone", data.user);
-                    })
-                    .error(function(data, status, headers, config){
-                            if (callback) {
-                                callback(data, status, headers, config);
-                            }
-                        }
-                    );
+                //$http.post( $rootScope.getHost() + "login", user )
+                //    .success(function (data, status, headers, config) {
+                //
+                //        $cookies.put('user', data.user.username);
+                //        $cookies.put('userId', data.user.id);
+                //        $cookies.put('userRole', data.user.userRole.role);
+                //        $cookies.put('tokenSecret', data.token);
+                //        $cookies.put('fullName', data.user.firstName + ' ' + data.user.lastName);
+                //
+                //        $http.defaults.headers.common['X-AUTH-TOKEN'] = data.token;
+                //
+                //        $rootScope.userRole = data.user.userRole.role;
+                //        $rootScope.userId = data.user.id;
+                //        $rootScope.username = data.user.username;
+                //        $rootScope.fullName = data.user.firstName + ' ' + data.user.lastName;
+                //        $rootScope.logged = true;
+                //
+                //        if (callback) {
+                //            callback(data, status, headers, config);
+                //        }
+                //
+                //        $rootScope.$broadcast("AuthenticationDone", data.user);
+                //    })
+                //    .error(function(data, status, headers, config){
+                //            if (callback) {
+                //                callback(data, status, headers, config);
+                //            }
+                //        }
+                //    );
 
             };
 

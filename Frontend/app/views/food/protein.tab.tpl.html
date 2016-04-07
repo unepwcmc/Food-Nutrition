@@ -14,14 +14,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[protein.name] != null" ng-repeat="protein in protein._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[protein.name] != null" ng-repeat="protein in protein._embedded.nutrientTypes">
                                 <a href="#e21{{ protein.name }}" data-toggle="tab">{{ protein.name | translate}}&nbsp;({{protein.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="protein in protein._embedded.nutrientTypes" class="tab-pane" id="e21{{ protein.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[protein.name] != null" ng-repeat="protein in protein._embedded.nutrientTypes" class="tab-pane" id="e21{{ protein.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="protein.name"></nutrient-item>
                             </div>
                         </div>
@@ -34,14 +34,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[amino.name] != null" ng-repeat="amino in amino_acids._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[amino.name] != null" ng-repeat="amino in amino_acids._embedded.nutrientTypes">
                                 <a href="#e22{{ amino.name }}" data-toggle="tab">{{ amino.name | translate}}&nbsp;({{amino.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="amino in amino_acids._embedded.nutrientTypes" class="tab-pane" id="e22{{ amino.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[amino.name] != null" ng-repeat="amino in amino_acids._embedded.nutrientTypes" class="tab-pane" id="e22{{ amino.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="amino.name"></nutrient-item>
                             </div>
                         </div>
@@ -54,14 +54,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[nitrogen.name] != null" ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[nitrogen.name] != null" ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes">
                                 <a href="#e23{{ nitrogen.name }}" data-toggle="tab">{{ nitrogen.name | translate}}&nbsp;({{nitrogen.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes" class="tab-pane" id="e23{{ nitrogen.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[nitrogen.name] != null" ng-repeat="nitrogen in nitrogen._embedded.nutrientTypes" class="tab-pane" id="e23{{ nitrogen.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="nitrogen.name"></nutrient-item>
                             </div>
                         </div>

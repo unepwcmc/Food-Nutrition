@@ -13,14 +13,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[ch.name] != null" ng-repeat="ch in cholesterol._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[ch.name] != null" ng-repeat="ch in cholesterol._embedded.nutrientTypes">
                                 <a href="#ca4{{ ch.name }}" data-toggle="tab">{{ ch.name | translate}}&nbsp;({{ch.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="ch in cholesterol._embedded.nutrientTypes" class="tab-pane" id="ca4{{ ch.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[ch.name] != null" ng-repeat="ch in cholesterol._embedded.nutrientTypes" class="tab-pane" id="ca4{{ ch.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="ch.name"></nutrient-item>
                             </div>
                         </div>
@@ -33,14 +33,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[ps.name] != null" ng-repeat="ps in plant_sterols._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[ps.name] != null" ng-repeat="ps in plant_sterols._embedded.nutrientTypes">
                                 <a href="#cb4{{ ps.name }}" data-toggle="tab">{{ ps.name | translate}}&nbsp;({{ps.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="ps in plant_sterols._embedded.nutrientTypes" class="tab-pane" id="cb4{{ ps.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[ps.name] != null" ng-repeat="ps in plant_sterols._embedded.nutrientTypes" class="tab-pane" id="cb4{{ ps.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="ps.name"></nutrient-item>
                             </div>
                         </div>
