@@ -10,6 +10,11 @@ define(['angularAMD'], function (angularAMD) {
                 templateUrl: 'views/food/nutrient.item.tpl.html',
                 scope:{ nutrient: "=", key:'=' },
                 controller: ['$scope','$timeout', function( $scope, $timeout ) {
+
+                    $rootScope.$watch('editMode', function( newValue, oldValue ){
+                        $scope.editMode = newValue;
+                    }, true);
+
                 }],
                 link: function (scope, element, attrs) {
                 }

@@ -19,12 +19,24 @@
             </div>
             <div class="col-xs-9">
                 <div class="tab-content">
-                    <div ng-show="food.generalAnalysis.density != null" class="tab-pane active" id="a1"><general-analysis-item analysis="food" key="density" edit-form></general-analysis-item></div>
-                    <div ng-show="food.generalAnalysis.ediblePortion != null" class="tab-pane" id="b1"><general-analysis-item analysis="food" key="ediblePortion" edit-form></general-analysis-item></div>
-                    <div ng-show="food.generalAnalysis.pH != null" class="tab-pane" id="c1"><general-analysis-item analysis="food" key="pH" edit-form></general-analysis-item></div>
-                    <div ng-show="food.generalAnalysis.solidSoluble != null" class="tab-pane" id="d1"><general-analysis-item analysis="food" key="solidSoluble" edit-form></general-analysis-item></div>
-                    <div ng-show="food.generalAnalysis.foodSize != null" class="tab-pane" id="e1"><general-analysis-item analysis="food" key="foodSize" edit-form></general-analysis-item></div>
-                    <div ng-show="food.generalAnalysis.foodWeight != null" class="tab-pane" id="f1"><general-analysis-item analysis="food" key="foodWeight" edit-form></general-analysis-item></div>
+                    <div ng-show="editMode || food.generalAnalysis.density != null" class="tab-pane active" id="a1">
+                        <general-analysis-item analysis="food" key="density" name="DENSITY" edit-form></general-analysis-item>
+                    </div>
+                    <div ng-show="editMode || food.generalAnalysis.ediblePortion != null" class="tab-pane" id="b1">
+                        <general-analysis-item analysis="food" key="ediblePortion" name="EDIBLE_PORTION" edit-form></general-analysis-item>
+                    </div>
+                    <div ng-show="editMode || food.generalAnalysis.pH != null" class="tab-pane" id="c1">
+                        <general-analysis-item analysis="food" key="pH" name="PH" edit-form></general-analysis-item>
+                    </div>
+                    <div ng-show="editMode || food.generalAnalysis.solidSoluble != null" class="tab-pane" id="d1">
+                        <general-analysis-item analysis="food" key="solidSoluble" name="SOLID_SOLUBLE" edit-form></general-analysis-item>
+                    </div>
+                    <div ng-show="editMode || food.generalAnalysis.foodSize != null" class="tab-pane" id="e1">
+                        <general-analysis-item analysis="food" key="foodSize" name="FOOD_SIZE" edit-form></general-analysis-item>
+                    </div>
+                    <div ng-show="editMode || food.generalAnalysis.foodWeight != null" class="tab-pane" id="f1">
+                        <general-analysis-item analysis="food" key="foodWeight" name="FOOD_WEIGHT" edit-form></general-analysis-item>
+                    </div>
                 </div>
             </div>
         </div>

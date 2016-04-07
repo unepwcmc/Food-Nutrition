@@ -16,14 +16,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[fatty.name] != null" ng-repeat="fatty in fatty_acids._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[fatty.name] != null" ng-repeat="fatty in fatty_acids._embedded.nutrientTypes">
                                 <a href="#g21{{ fatty.name }}" data-toggle="tab">{{ fatty.name | translate}}&nbsp;({{fatty.unit | translate}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="fatty in fatty_acids._embedded.nutrientTypes" class="tab-pane" id="g21{{ fatty.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[fatty.name] != null" ng-repeat="fatty in fatty_acids._embedded.nutrientTypes" class="tab-pane" id="g21{{ fatty.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="fatty.name"></nutrient-item>
                             </div>
                         </div>
@@ -36,14 +36,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[saturated.name] != null" ng-repeat="saturated in saturated._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[saturated.name] != null" ng-repeat="saturated in saturated._embedded.nutrientTypes">
                                 <a href="#g22{{ saturated.name }}" data-toggle="tab">{{ saturated.name | translate}}&nbsp;({{saturated.unit}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="saturated in saturated._embedded.nutrientTypes" class="tab-pane" id="g22{{ saturated.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[saturated.name] != null" ng-repeat="saturated in saturated._embedded.nutrientTypes" class="tab-pane" id="g22{{ saturated.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="saturated.name"></nutrient-item>
                             </div>
                         </div>
@@ -56,14 +56,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[monosaturated.name] != null" ng-repeat="monosaturated in monosaturated._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[monosaturated.name] != null" ng-repeat="monosaturated in monosaturated._embedded.nutrientTypes">
                                 <a href="#g23{{ monosaturated.name }}" data-toggle="tab">{{ monosaturated.name | translate}}&nbsp;({{monosaturated.unit}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="monosaturated in monosaturated._embedded.nutrientTypes" class="tab-pane" id="g23{{ monosaturated.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[monosaturated.name] != null" ng-repeat="monosaturated in monosaturated._embedded.nutrientTypes" class="tab-pane" id="g23{{ monosaturated.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="monosaturated.name"></nutrient-item>
                             </div>
                         </div>
@@ -76,14 +76,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[polyunsaturated.name] != null" ng-repeat="polyunsaturated in polyunsaturated._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[polyunsaturated.name] != null" ng-repeat="polyunsaturated in polyunsaturated._embedded.nutrientTypes">
                                 <a href="#g24{{ polyunsaturated.name }}" data-toggle="tab">{{ polyunsaturated.name | translate}}&nbsp;({{polyunsaturated.unit}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="polyunsaturated in polyunsaturated._embedded.nutrientTypes" class="tab-pane" id="g24{{ polyunsaturated.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[polyunsaturated.name] != null" ng-repeat="polyunsaturated in polyunsaturated._embedded.nutrientTypes" class="tab-pane" id="g24{{ polyunsaturated.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="polyunsaturated.name"></nutrient-item>
                             </div>
                         </div>
@@ -96,14 +96,14 @@
                 <div class="row">
                     <div class="col-xs-4 ui-tab">
                         <ul class="nav nav-tabs tabs-left">
-                            <li ng-show="food.nutrients[fat.name] != null" ng-repeat="fat in fat_components._embedded.nutrientTypes">
+                            <li ng-show="editMode || food.nutrients[fat.name] != null" ng-repeat="fat in fat_components._embedded.nutrientTypes">
                                 <a href="#g25{{ fat.name }}" data-toggle="tab">{{ fat.name | translate}}&nbsp;({{fat.unit}})</a>
                             </li>
                         </ul>
                     </div>
                     <div class="col-xs-8">
                         <div class="tab-content">
-                            <div ng-repeat="fat in fat_components._embedded.nutrientTypes" class="tab-pane" id="g25{{ fat.name }}" on-finish-render="ngRepeatFinished">
+                            <div ng-show="editMode || food.nutrients[fat.name] != null" ng-repeat="fat in fat_components._embedded.nutrientTypes" class="tab-pane" id="g25{{ fat.name }}" on-finish-render="ngRepeatFinished">
                                 <nutrient-item nutrient="food" key="fat.name"></nutrient-item>
                             </div>
                         </div>

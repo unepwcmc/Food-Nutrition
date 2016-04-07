@@ -1,7 +1,5 @@
 <div style="max-width: 500px;">
-    <h5><strong>{{ nutrient.nutrients[key].nutrientType.name | translate }}</strong></h5>
-
-    EDIT MODE = {{editMode}}
+    <h5><strong>{{ key | translate }}</strong></h5>
 
     <div ng-show="!editMode" class="well"><strong>{{nutrient.nutrients[key].value}}</strong>&nbsp;{{nutrient.nutrients[key].nutrientType.unit | translate}}</div>
 
